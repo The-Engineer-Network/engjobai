@@ -1,0 +1,29 @@
+# Secrets — never commit these. .env.example is the template that IS committed.
+.env
+.env.local
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Scratch
+*.log
+tmp/
+scratch/
+
+# NOTE: jobs.db and site/ are intentionally NOT ignored.
+#   jobs.db  is the engine's memory of what it has already published — the
+#            GitHub Actions run commits it so the schedule has no server.
+#   site/    is the published output you point Pages at.

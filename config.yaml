@@ -1,0 +1,357 @@
+# ENG Job Engine — configuration
+# Everything you will normally want to change lives in this file.
+
+community:
+  name: "The Engineer Network"
+  site: "https://theengineernetwork.com"
+  # Paste your WhatsApp group invite link here. It is shown on the page so
+  # people who receive a shared link can join the community themselves.
+  whatsapp_group: ""
+  # Where the built pages are published. Used to build share links.
+  public_base_url: "https://jobs.theengineernetwork.com"
+
+# ---------------------------------------------------------------------------
+# Tracks: one section on the page per entry. 10 jobs each per day.
+# `match` is the rules-first classifier — a job matching these keywords is
+# assigned without ever calling the AI.
+# ---------------------------------------------------------------------------
+tracks:
+  - key: frontend
+    label: "Frontend"
+    blurb: "React, Vue, Angular, and the browser side of the stack."
+    target: 10
+    match: [frontend, front-end, "front end", react, reactjs, next.js, nextjs, vue,
+            vuejs, nuxt, angular, svelte, tailwind, ui engineer, web developer,
+            javascript developer, typescript developer]
+
+  - key: backend
+    label: "Backend"
+    blurb: "APIs, services, databases and everything behind the request."
+    target: 10
+    match: [backend, back-end, "back end", node.js, nodejs, express, nestjs, laravel,
+            php developer, django, flask, fastapi, golang, "go developer", rust,
+            spring boot, java developer, ruby on rails, ".net developer", api developer,
+            microservices]
+
+  - key: fullstack
+    label: "Full-stack"
+    blurb: "Roles that expect you across the whole stack."
+    target: 10
+    match: [full-stack, fullstack, "full stack", mern, mean stack, "t3 stack"]
+
+  - key: mobile
+    label: "Mobile"
+    blurb: "Android, iOS, React Native and Flutter."
+    target: 10
+    match: [mobile developer, android, ios developer, swift, kotlin, react native,
+            flutter, mobile engineer, "app developer"]
+
+  - key: devops
+    label: "DevOps & Cloud"
+    blurb: "Infrastructure, pipelines, reliability and cloud platforms."
+    target: 10
+    match: [devops, sre, site reliability, platform engineer, infrastructure engineer,
+            kubernetes, docker, terraform, aws, azure, gcp, cloud engineer, ci/cd,
+            systems engineer, linux administrator]
+
+  - key: data
+    label: "Data & AI"
+    blurb: "Data engineering, analytics, machine learning and AI."
+    target: 10
+    match: [data engineer, data scientist, data analyst, machine learning, "ml engineer",
+            ai engineer, deep learning, nlp, analytics engineer, bi developer,
+            business intelligence, etl, "big data", spark]
+
+  - key: qa_security
+    label: "QA & Security"
+    blurb: "Testing, automation and cybersecurity. Thinner most days — that is honest, not broken."
+    target: 10
+    match: [qa engineer, quality assurance, test engineer, automation tester, sdet,
+            penetration tester, cybersecurity, security engineer, soc analyst,
+            information security]
+
+  - key: design_product
+    label: "Design & Product"
+    blurb: "Product design, UI/UX and product management for technical teams."
+    target: 10
+    match: [ui/ux, ux designer, ui designer, product designer, product manager,
+            figma, interaction designer, "design engineer"]
+
+# ---------------------------------------------------------------------------
+# Rules. These are deliberately strict — the credibility of the digest is the
+# whole asset, so the engine would rather publish 6 real jobs than 10 padded.
+# ---------------------------------------------------------------------------
+rules:
+  never_pad: true          # never fill a track with junk to hit `target`
+  carry_forward_hours: 72  # unapplied, still-open jobs may refill a thin track
+  report_shortfall: true   # print real counts at the top of the page
+  max_age_days: 14         # anything older than this is dropped outright
+
+# Hard scam gate. A posting matching any of these is dropped silently and
+# never published. Warnings get ignored; absence does not.
+scam_blocklist:
+  - "application fee"
+  - "registration fee"
+  - "processing fee"
+  - "training fee"
+  - "pay a fee"
+  - "non-refundable"
+  - "send your bvn"
+  - "western union"
+  - "money gram"
+  - "moneygram"
+  - "pay before"
+  - "recruitment fee"
+
+# ---------------------------------------------------------------------------
+# SOURCES
+# Set `enabled: false` on any source that starts misbehaving. Run
+#   python -m eng.doctor
+# to see which sources are alive right now.
+# ---------------------------------------------------------------------------
+sources:
+
+  # --- Global JSON APIs (no key required, confirmed live) ------------------
+  - id: remoteok
+    kind: json_api
+    enabled: true
+    scope: global
+    url: "https://remoteok.com/api"
+    # RemoteOK's API terms require a followed link back and credit as source.
+    attribution: "RemoteOK"
+    attribution_url: "https://remoteok.com"
+
+  - id: remotive
+    kind: json_api
+    enabled: true
+    scope: global
+    url: "https://remotive.com/api/remote-jobs?limit=200"
+    attribution: "Remotive"
+    attribution_url: "https://remotive.com"
+
+  - id: himalayas
+    kind: json_api
+    enabled: true
+    scope: global
+    url: "https://himalayas.app/jobs/api?limit=100"
+    attribution: "Himalayas"
+    attribution_url: "https://himalayas.app"
+
+  - id: arbeitnow
+    kind: json_api
+    enabled: true
+    scope: global
+    url: "https://www.arbeitnow.com/api/job-board-api"
+    attribution: "Arbeitnow"
+    attribution_url: "https://www.arbeitnow.com"
+
+  - id: jobicy
+    kind: json_api
+    enabled: true
+    scope: global
+    url: "https://jobicy.com/api/v2/remote-jobs?count=100"
+    # Jobicy's terms require crediting Jobicy with a direct link.
+    attribution: "Jobicy"
+    attribution_url: "https://jobicy.com"
+
+  - id: workingnomads
+    kind: json_api
+    enabled: true
+    scope: global
+    url: "https://www.workingnomads.com/api/exposed_jobs/"
+    attribution: "Working Nomads"
+    attribution_url: "https://www.workingnomads.com"
+
+  # --- Global RSS ----------------------------------------------------------
+  - id: wwr_programming
+    kind: rss
+    enabled: true
+    scope: global
+    url: "https://weworkremotely.com/categories/remote-programming-jobs.rss"
+    attribution: "We Work Remotely"
+    attribution_url: "https://weworkremotely.com"
+
+  - id: wwr_devops
+    kind: rss
+    enabled: true
+    scope: global
+    url: "https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss"
+    attribution: "We Work Remotely"
+    attribution_url: "https://weworkremotely.com"
+
+  - id: wwr_design
+    kind: rss
+    enabled: true
+    scope: global
+    url: "https://weworkremotely.com/categories/remote-design-jobs.rss"
+    attribution: "We Work Remotely"
+    attribution_url: "https://weworkremotely.com"
+
+  - id: wwr_product
+    kind: rss
+    enabled: true
+    scope: global
+    url: "https://weworkremotely.com/categories/remote-product-jobs.rss"
+    attribution: "We Work Remotely"
+    attribution_url: "https://weworkremotely.com"
+
+  # --- Nigeria: MyJobMag (selectors verified) ------------------------------
+  # li.job-info cards, with li.job-desc giving us a real description for free.
+  - id: myjobmag
+    kind: html
+    enabled: true
+    scope: nigeria
+    attribution: "MyJobMag"
+    attribution_url: "https://www.myjobmag.com"
+    base: "https://www.myjobmag.com"
+    urls:
+      - "https://www.myjobmag.com/jobs-by-title/backend-developers"
+      - "https://www.myjobmag.com/jobs-by-title/frontend-developers"
+      - "https://www.myjobmag.com/jobs-by-title/software-developers"
+      - "https://www.myjobmag.com/jobs-by-title/mobile-developers"
+      - "https://www.myjobmag.com/jobs-by-title/devops"
+      - "https://www.myjobmag.com/jobs-by-title/data-analyst"
+      - "https://www.myjobmag.com/search/jobs?q=developer"
+      - "https://www.myjobmag.com/search/jobs?q=engineer"
+      - "https://www.myjobmag.com/cp/remote-tech-jobs-nigeria"
+    select:
+      card: "li.job-info"
+      title: "h2 a"
+      link: "h2 a"
+      desc: "li.job-desc"
+
+  # --- Nigeria: HotNigerianJobs (selectors verified) -----------------------
+  # NOTE: HNJ's RSS feed at /rss.xml is abandoned (last built June 2021), so we
+  # scrape the HTML index instead. HNJ posts company roundups as often as single
+  # roles, so the classifier drops any entry with no tech signal in it.
+  - id: hotnigerianjobs
+    kind: html
+    enabled: true
+    scope: nigeria
+    attribution: "HotNigerianJobs"
+    attribution_url: "https://www.hotnigerianjobs.com"
+    base: "https://www.hotnigerianjobs.com"
+    urls:
+      - "https://www.hotnigerianjobs.com/"
+      - "https://www.hotnigerianjobs.com/information-technology-jobs-in-nigeria.html"
+    select:
+      card: "a[href*='hotjobs/']"
+      title: "self"
+      link: "self"
+
+  # --- Nigeria / Africa: best-effort boards --------------------------------
+  # These change markup more often than the two above. If one goes quiet,
+  # `python -m eng.doctor` will say so and you tune the selector here — no
+  # code change needed.
+  # Jobberman, Jobzilla and NaijaJobPortal all render job links directly in the
+  # HTML with a stable URL shape, so we select the anchor itself rather than a
+  # card wrapper. Verified against live markup.
+  - id: jobberman
+    kind: html
+    enabled: true
+    scope: nigeria
+    attribution: "Jobberman"
+    attribution_url: "https://www.jobberman.com"
+    base: "https://www.jobberman.com"
+    urls:
+      - "https://www.jobberman.com/jobs/software-data"
+      - "https://www.jobberman.com/jobs/software-data?page=2"
+    select:
+      card: "a[href*='/listings/']"
+      title: "self"
+      link: "self"
+
+  - id: jobzilla
+    kind: html
+    enabled: true
+    scope: nigeria
+    attribution: "Jobzilla NG"
+    attribution_url: "https://www.jobzilla.ng"
+    base: "https://www.jobzilla.ng"
+    urls:
+      - "https://www.jobzilla.ng/jobs"
+      - "https://www.jobzilla.ng/jobs?page=2"
+    select:
+      card: "a[href*='/jobs/']"
+      title: "self"
+      link: "self"
+
+  - id: naijajobportal
+    kind: html
+    enabled: true
+    scope: nigeria
+    attribution: "NaijaJobPortal"
+    attribution_url: "https://www.naijajobportal.com.ng"
+    base: "https://www.naijajobportal.com.ng"
+    urls:
+      - "https://www.naijajobportal.com.ng/remote-jobs"
+      - "https://www.naijajobportal.com.ng/jobs"
+    select:
+      card: "a[href*='/jobs/']"
+      title: "self"
+      link: "self"
+
+  - id: jobgurus
+    kind: html
+    enabled: true
+    scope: nigeria
+    attribution: "JobGurus"
+    attribution_url: "https://www.jobgurus.com.ng"
+    base: "https://www.jobgurus.com.ng"
+    urls:
+      - "https://www.jobgurus.com.ng/"
+    select:
+      card: "a[href*='/job']"
+      title: "self"
+      link: "self"
+
+  # Disabled after checking the live sites, not on a guess:
+  #   africatechjobs.xyz  -> the root URL now returns 404
+  #   launchafrica.io     -> returns 200 but renders listings client-side, so
+  #                          there is nothing in the HTML to scrape. It would
+  #                          need Playwright; not worth it for its volume.
+  # Left in the file so you can re-enable if either changes.
+  - id: africatechjobs
+    kind: html
+    enabled: false
+    scope: africa
+    attribution: "Africa Tech Jobs"
+    attribution_url: "https://africatechjobs.xyz"
+    base: "https://africatechjobs.xyz"
+    urls: ["https://africatechjobs.xyz/"]
+    select:
+      card: "a[href*='job']"
+      title: "self"
+      link: "self"
+
+  - id: launchafrica
+    kind: html
+    enabled: false
+    scope: africa
+    attribution: "Launch Africa"
+    attribution_url: "https://launchafrica.io"
+    base: "https://launchafrica.io"
+    urls: ["https://launchafrica.io/"]
+    select:
+      card: "a[href*='job']"
+      title: "self"
+      link: "self"
+
+  # --- Nigeria: Telegram public channels -----------------------------------
+  # Reads the public t.me/s/<channel> web view. No account, no API key.
+  - id: telegram_ng
+    kind: telegram
+    enabled: true
+    scope: nigeria
+    attribution: "Telegram"
+    channels:
+      - JobsinNigeriadaily
+      - jobnownigeria
+      - jobnetworkng
+      - jobsnigeria001rekrutconsulting
+
+# ---------------------------------------------------------------------------
+# Fill order for each track. Nigeria-local first so the A-list skews to jobs
+# your community can realistically land; global fills the remainder.
+# ---------------------------------------------------------------------------
+fill_order: [nigeria, africa, global]

@@ -1,0 +1,1323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ENG Job Board — Tuesday 18 August 2026</title>
+<meta name="description" content="76 verified frontend, backend, DevOps, mobile and data roles for Nigerian engineers — Tuesday 18 August 2026.">
+<meta property="og:title" content="ENG Job Board — Tuesday 18 August 2026">
+<meta property="og:description" content="76 verified tech roles. Nigeria and global remote.">
+<meta name="theme-color" content="#0C0906">
+<style>
+*{box-sizing:border-box}
+:root{
+  --bg:#0C0906; --surface:#15100A; --surface-2:#1D1610; --line:#2E241A;
+  --accent:#E8891C; --accent-2:#F6AC52; --accent-wash:#2A1B0C;
+  --text:#F4EBE0; --muted:#A5937E; --dim:#7A6A59;
+  --sans:ui-sans-serif,system-ui,"Segoe UI",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"Cascadia Mono","SF Mono",Consolas,monospace;
+}
+html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:76rem;margin:0 auto;padding:0 clamp(1rem,3vw,2rem)}
+
+/* ---- top bar ---- */
+.bar{position:sticky;top:0;z-index:50;background:rgba(12,9,6,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar-in{display:flex;align-items:center;gap:1rem;padding:.85rem 0}
+.mark{font-weight:800;letter-spacing:-.03em;font-size:1.35rem;color:var(--accent);
+  text-decoration:none;white-space:nowrap}
+.mark span{color:var(--text);font-weight:600;font-size:.82rem;letter-spacing:.01em;
+  margin-left:.5rem}
+.bar-sp{flex:1}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border:none;cursor:pointer;
+  font-family:var(--sans);font-size:.9rem;font-weight:650;padding:.62rem 1.15rem;
+  border-radius:6px;background:var(--accent);color:#1A1006;text-decoration:none;
+  transition:background .15s}
+.btn:hover{background:var(--accent-2)}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.btn-ghost:hover{background:var(--surface-2);border-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---- hero ---- */
+.hero{padding:clamp(2.25rem,5vw,3.75rem) 0 1.75rem}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);margin:0 0 .75rem}
+h1{font-size:clamp(2rem,5.5vw,3.1rem);line-height:1.05;letter-spacing:-.035em;
+  margin:0 0 .85rem;font-weight:800;text-wrap:balance}
+.lede{margin:0;max-width:52ch;color:var(--muted);font-size:1.05rem}
+.counts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
+.count{display:inline-flex;align-items:baseline;gap:.42rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:999px;padding:.34rem .85rem;
+  font-size:.83rem;color:var(--muted);text-decoration:none;transition:border-color .15s}
+.count:hover{border-color:var(--accent)}
+.count b{color:var(--text);font-family:var(--mono);font-size:.9rem}
+.count.thin b{color:var(--accent-2)}
+
+/* ---- share strip ---- */
+.share{margin:2rem 0 .5rem;background:var(--surface);border:1px solid var(--line);
+  border-left:3px solid var(--accent);border-radius:8px;padding:1.15rem 1.35rem;
+  display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+.share p{margin:0;flex:1;min-width:16rem;color:var(--muted);font-size:.94rem}
+.share strong{color:var(--text)}
+
+/* ---- sections ---- */
+section{padding-top:2.75rem}
+.sec-head{display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap;
+  border-bottom:1px solid var(--line);padding-bottom:.7rem;margin-bottom:1.25rem}
+h2{font-size:clamp(1.3rem,3vw,1.65rem);letter-spacing:-.02em;margin:0;font-weight:750}
+.tally{font-family:var(--mono);font-size:.78rem;color:var(--dim);
+  background:var(--surface-2);border-radius:4px;padding:.2rem .5rem}
+.tally.short{color:var(--accent-2)}
+.sec-blurb{width:100%;margin:.15rem 0 0;color:var(--muted);font-size:.92rem}
+
+.grid{display:grid;gap:.85rem;grid-template-columns:repeat(auto-fill,minmax(21rem,1fr))}
+
+/* ---- job card ---- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;
+  padding:1.05rem 1.15rem 1rem;display:flex;flex-direction:column;gap:.6rem;
+  transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card h3{margin:0;font-size:1rem;line-height:1.35;letter-spacing:-.01em;font-weight:650}
+.card h3 a{color:var(--text);text-decoration:none}
+.card h3 a:hover{color:var(--accent-2)}
+.meta{font-size:.85rem;color:var(--muted);margin:0}
+.meta b{color:var(--text);font-weight:600}
+.desc{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+.chips{display:flex;flex-wrap:wrap;gap:.35rem}
+.chip{font-family:var(--mono);font-size:.65rem;letter-spacing:.06em;
+  text-transform:uppercase;padding:.2rem .45rem;border-radius:3px;
+  background:var(--surface-2);color:var(--dim)}
+.chip.ng{background:var(--accent-wash);color:var(--accent-2)}
+.chip.rm{background:#0F2418;color:#5FBF83}
+.card-foot{display:flex;align-items:center;gap:.6rem;margin-top:auto;padding-top:.7rem;
+  border-top:1px solid var(--line)}
+.apply{font-size:.87rem;font-weight:650;color:var(--accent);text-decoration:none}
+.apply:hover{color:var(--accent-2);text-decoration:underline}
+.mini{margin-left:auto;background:transparent;border:1px solid var(--line);
+  color:var(--muted);font-family:var(--sans);font-size:.75rem;cursor:pointer;
+  padding:.28rem .6rem;border-radius:4px;transition:all .15s}
+.mini:hover{border-color:var(--accent);color:var(--accent)}
+.src{font-family:var(--mono);font-size:.66rem;color:var(--dim);text-decoration:none}
+.src:hover{color:var(--accent)}
+
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:8px;
+  padding:1.5rem;color:var(--muted);font-size:.92rem;text-align:center}
+
+/* ---- caution + footer ---- */
+.caution{margin:3.5rem 0 0;background:var(--surface);border:1px solid var(--line);
+  border-left:3px solid #C4622A;border-radius:0 8px 8px 0;padding:1.2rem 1.4rem}
+.caution h2{font-size:1.05rem;margin:0 0 .6rem}
+.caution ul{margin:0;padding-left:1.15rem;color:var(--muted);font-size:.9rem}
+.caution li{margin-bottom:.35rem}
+footer{margin-top:3rem;border-top:1px solid var(--line);padding:1.5rem 0 3.5rem;
+  color:var(--dim);font-size:.8rem;line-height:1.7}
+footer a{color:var(--muted)}
+
+@media(max-width:36rem){
+  .bar-in{flex-wrap:wrap}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="wrap bar-in">
+  <a class="mark" href="index.html">ENG<span>Job Board</span></a>
+  <div class="bar-sp"></div>
+  
+  <a class="btn" href="https://wa.me/?text=ENG%20Job%20Board%20%E2%80%94%20Tue%2018%20Aug%0A%0AFrontend%3A%2010%0ABackend%3A%2010%0AFull-stack%3A%2010%0AMobile%3A%209%0ADevOps%20%26%20Cloud%3A%2010%0AData%20%26%20AI%3A%2010%0AQA%20%26%20Security%3A%207%0ADesign%20%26%20Product%3A%2010%0A%0A76%20verified%20roles%2C%20every%20link%20checked%20open%20this%20morning.%0Ahttps%3A//jobs.theengineernetwork.com/2026-08-18.html" target="_blank" rel="noopener">Share to WhatsApp</a>
+</div></div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Tuesday 18 August 2026</p>
+    <h1>76 verified tech roles, sorted by track.</h1>
+    <p class="lede">Collected this morning from Nigerian job boards, African startup boards
+      and global remote boards. Every link was checked open before it was published.</p>
+    <div class="counts"><a class="count" href="#frontend">Frontend <b>10</b></a><a class="count" href="#backend">Backend <b>10</b></a><a class="count" href="#fullstack">Full-stack <b>10</b></a><a class="count thin" href="#mobile">Mobile <b>9</b></a><a class="count" href="#devops">DevOps &amp; Cloud <b>10</b></a><a class="count" href="#data">Data &amp; AI <b>10</b></a><a class="count thin" href="#qa_security">QA &amp; Security <b>7</b></a><a class="count" href="#design_product">Design &amp; Product <b>10</b></a></div>
+  </header>
+
+  <div class="share">
+    <p><strong>Press share, it lands in the group.</strong> Every job also has its own
+      Share button, so you can send one role to one person.</p>
+    <a class="btn" href="https://wa.me/?text=ENG%20Job%20Board%20%E2%80%94%20Tue%2018%20Aug%0A%0AFrontend%3A%2010%0ABackend%3A%2010%0AFull-stack%3A%2010%0AMobile%3A%209%0ADevOps%20%26%20Cloud%3A%2010%0AData%20%26%20AI%3A%2010%0AQA%20%26%20Security%3A%207%0ADesign%20%26%20Product%3A%2010%0A%0A76%20verified%20roles%2C%20every%20link%20checked%20open%20this%20morning.%0Ahttps%3A//jobs.theengineernetwork.com/2026-08-18.html" target="_blank" rel="noopener">Share today's board</a>
+  </div>
+
+    <section id="frontend">
+      <div class="sec-head">
+        <h2>Frontend</h2>
+        <span class="tally">10/10</span>
+        <p class="sec-blurb">React, Vue, Angular, and the browser side of the stack.</p>
+      </div>
+      <div class="grid">
+      <article class="card" data-share="Frontend and backend development teacher at Avocado Virtual Solutions Karshi, FCT
+Apply for Frontend and backend development teacher at Avocado Virtual Solutions in Karshi, FCT. Full time · Intermediate level. Apply now on NaijaJobPortal.
+Apply: https://www.naijajobportal.com.ng/jobs/frontend-and-backend-development-teacher">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.naijajobportal.com.ng/jobs/frontend-and-backend-development-teacher" target="_blank" rel="noopener">Frontend and backend development teacher</a></h3>
+        <p class="meta"><b>Avocado Virtual Solutions Karshi, FCT</b> · Nigeria</p>
+        <p class="desc">Apply for Frontend and backend development teacher at Avocado Virtual Solutions in Karshi, FCT. Full time · Intermediate level. Apply now on NaijaJobPortal.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.naijajobportal.com.ng/jobs/frontend-and-backend-development-teacher" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.naijajobportal.com.ng" target="_blank" rel="noopener">via NaijaJobPortal</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Remote Website Developer (Front-End / WordPress) 6 open slot
+Apply for Remote Website Developer (Front-End / WordPress) 6 open slot at RemoteTask online in Remote, Lagos. Full time · Entry level. Apply now on NaijaJobPortal.
+Apply: https://www.naijajobportal.com.ng/jobs/remote-website-developer-front-end-wordpress-6-open-slot">
+        <div class="chips"><span class="chip ng">Nigeria</span><span class="chip rm">Remote</span></div>
+        <h3><a href="https://www.naijajobportal.com.ng/jobs/remote-website-developer-front-end-wordpress-6-open-slot" target="_blank" rel="noopener">Remote Website Developer (Front-End / WordPress) 6 open slot</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Apply for Remote Website Developer (Front-End / WordPress) 6 open slot at RemoteTask online in Remote, Lagos. Full time · Entry level. Apply now on NaijaJobPortal.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.naijajobportal.com.ng/jobs/remote-website-developer-front-end-wordpress-6-open-slot" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.naijajobportal.com.ng" target="_blank" rel="noopener">via NaijaJobPortal</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Web developer
+Web developer — Nigeria.
+Apply: https://www.jobberman.com/listings/web-developer-erpp5k">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/web-developer-erpp5k" target="_blank" rel="noopener">Web developer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Web developer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/web-developer-erpp5k" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Backend (PHP) Developer at eHealth4everyone
+Summary We are looking for a Backend Web Developer who has a passion for web development. He/She should be able to work closely with front-end web developers to provide necessary server-side l
+Apply: https://www.myjobmag.com/job/backend-php-developer-ehealth4everyone-6">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/backend-php-developer-ehealth4everyone-6" target="_blank" rel="noopener">Backend (PHP) Developer</a></h3>
+        <p class="meta"><b>eHealth4everyone</b> · Nigeria</p>
+        <p class="desc">Summary We are looking for a Backend Web Developer who has a passion for web development. He/She should be able to work closely with front-end web developers to provide necessary server-side l</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/backend-php-developer-ehealth4everyone-6" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Mobile App Frontend and Backend Software Developer at CreativeMansion
+Responsibilities Identify and plan for new features Develop application programming interfaces (APIs) to support mobile functionality Suggest and implement new mobile products, applications
+Apply: https://www.myjobmag.com/job/mobile-app-frontend-and-backend-software-developer-creativemansion">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/mobile-app-frontend-and-backend-software-developer-creativemansion" target="_blank" rel="noopener">Mobile App Frontend and Backend Software Developer</a></h3>
+        <p class="meta"><b>CreativeMansion</b> · Nigeria</p>
+        <p class="desc">Responsibilities Identify and plan for new features Develop application programming interfaces (APIs) to support mobile functionality Suggest and implement new mobile products, applications</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/mobile-app-frontend-and-backend-software-developer-creativemansion" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Frontend Engineer (React / Next.js) at Kashia Limited
+What you&#x27;ll do Build and maintain product interfaces in Next.js and TypeScript Translate design files into accurate, responsive, accessible components Integrate with backend APIs and han
+Apply: https://www.myjobmag.com/job/frontend-engineer-react-next-js-kashia-limited">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/frontend-engineer-react-next-js-kashia-limited" target="_blank" rel="noopener">Frontend Engineer (React / Next.js)</a></h3>
+        <p class="meta"><b>Kashia Limited</b> · Nigeria</p>
+        <p class="desc">What you&#x27;ll do Build and maintain product interfaces in Next.js and TypeScript Translate design files into accurate, responsive, accessible components Integrate with backend APIs and han</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/frontend-engineer-react-next-js-kashia-limited" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Frontend Developer at OnePyramid
+Key Responsibilities: Develop responsive and interactive web applications. Convert UI/UX designs into functional applications. Build reusable and scalable components. Integrate frontend ap
+Apply: https://www.myjobmag.com/job/frontend-developer-onepyramid">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/frontend-developer-onepyramid" target="_blank" rel="noopener">Frontend Developer</a></h3>
+        <p class="meta"><b>OnePyramid</b> · Nigeria</p>
+        <p class="desc">Key Responsibilities: Develop responsive and interactive web applications. Convert UI/UX designs into functional applications. Build reusable and scalable components. Integrate frontend ap</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/frontend-developer-onepyramid" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Frontend Enginner at Prodevs
+Job Overview: We are seeking a skilled and motivated Frontend Engineer to join our team. In this role, you will focus on developing user-facing features and interfaces, ensuring seamless functiona
+Apply: https://www.myjobmag.com/job/frontend-enginner-prodevs">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/frontend-enginner-prodevs" target="_blank" rel="noopener">Frontend Enginner</a></h3>
+        <p class="meta"><b>Prodevs</b> · Nigeria</p>
+        <p class="desc">Job Overview: We are seeking a skilled and motivated Frontend Engineer to join our team. In this role, you will focus on developing user-facing features and interfaces, ensuring seamless functiona</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/frontend-enginner-prodevs" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Intern - Frontend Engineer at LocalBuka
+Interested applicant(s) should possess relevant qualifications and experience
+Apply: https://www.myjobmag.com/job/intern-frontend-engineer-localbuka">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/intern-frontend-engineer-localbuka" target="_blank" rel="noopener">Intern - Frontend Engineer</a></h3>
+        <p class="meta"><b>LocalBuka</b> · Nigeria</p>
+        <p class="desc">Interested applicant(s) should possess relevant qualifications and experience</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/intern-frontend-engineer-localbuka" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Frontend Engineer at Kuda Bank
+We’re on the lookout for a passionate Senior Frontend Engineer who is a creative problem solver and excited about to disrupting banking in Nigeria. Responsibilities Meeting with the dev
+Apply: https://www.myjobmag.com/job/senior-frontend-engineer-kuda-bank">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/senior-frontend-engineer-kuda-bank" target="_blank" rel="noopener">Senior Frontend Engineer</a></h3>
+        <p class="meta"><b>Kuda Bank</b> · Nigeria</p>
+        <p class="desc">We’re on the lookout for a passionate Senior Frontend Engineer who is a creative problem solver and excited about to disrupting banking in Nigeria. Responsibilities Meeting with the dev</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/senior-frontend-engineer-kuda-bank" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+    </div>
+    </section>
+    <section id="backend">
+      <div class="sec-head">
+        <h2>Backend</h2>
+        <span class="tally">10/10</span>
+        <p class="sec-blurb">APIs, services, databases and everything behind the request.</p>
+      </div>
+      <div class="grid">
+      <article class="card" data-share="HR / Recruiter Needed – Supply Senior Backend &amp; Data Engineers
+Apply for HR / Recruiter Needed – Supply Senior Backend &amp;amp;amp; Data Engineers at SSF in Lagos, Lagos. Contract · Entry level. Apply now on NaijaJobPortal.
+Apply: https://www.naijajobportal.com.ng/jobs/hr-recruiter-needed-supply-senior-backend-data-engineers">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.naijajobportal.com.ng/jobs/hr-recruiter-needed-supply-senior-backend-data-engineers" target="_blank" rel="noopener">HR / Recruiter Needed – Supply Senior Backend &amp; Data Engineers</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Apply for HR / Recruiter Needed – Supply Senior Backend &amp;amp;amp; Data Engineers at SSF in Lagos, Lagos. Contract · Entry level. Apply now on NaijaJobPortal.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.naijajobportal.com.ng/jobs/hr-recruiter-needed-supply-senior-backend-data-engineers" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.naijajobportal.com.ng" target="_blank" rel="noopener">via NaijaJobPortal</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="PHP Developer
+PHP Developer — Nigeria.
+Apply: https://www.jobberman.com/listings/php-developer-m00nvg">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/php-developer-m00nvg" target="_blank" rel="noopener">PHP Developer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">PHP Developer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/php-developer-m00nvg" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Back-end Developer
+Back-end Developer — Nigeria.
+Apply: https://www.jobberman.com/listings/it-project-j65rge">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/it-project-j65rge" target="_blank" rel="noopener">Back-end Developer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Back-end Developer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/it-project-j65rge" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Backend Engineer at iRecharge Tech-Innovations
+Requirements and Qualifications: 3-5 years of professional backend development experience, preferably within fintech, banking, payments, Or digital products. Strong proficiency in Java, Python
+Apply: https://www.myjobmag.com/job/backend-engineer-irecharge-tech-innovations-1">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/backend-engineer-irecharge-tech-innovations-1" target="_blank" rel="noopener">Backend Engineer</a></h3>
+        <p class="meta"><b>iRecharge Tech-Innovations</b> · Nigeria</p>
+        <p class="desc">Requirements and Qualifications: 3-5 years of professional backend development experience, preferably within fintech, banking, payments, Or digital products. Strong proficiency in Java, Python</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/backend-engineer-irecharge-tech-innovations-1" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Backend Engineer (Go) at Kashia Limited
+What you&#x27;ll do Design and build backend services in Go, backed by PostgreSQL Own API design and documentation for services consumed by web and mobile clients Improve reliability, observa
+Apply: https://www.myjobmag.com/job/senior-backend-engineer-go-kashia-limited">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/senior-backend-engineer-go-kashia-limited" target="_blank" rel="noopener">Senior Backend Engineer (Go)</a></h3>
+        <p class="meta"><b>Kashia Limited</b> · Nigeria</p>
+        <p class="desc">What you&#x27;ll do Design and build backend services in Go, backed by PostgreSQL Own API design and documentation for services consumed by web and mobile clients Improve reliability, observa</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/senior-backend-engineer-go-kashia-limited" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Backend Developer at OnePyramid
+Key Responsibilities: Develop and maintain backend applications and APIs. Design and optimize databases and system architecture. Integrate third-party APIs and services. Ensure application
+Apply: https://www.myjobmag.com/job/senior-backend-developer-onepyramid">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/senior-backend-developer-onepyramid" target="_blank" rel="noopener">Senior Backend Developer</a></h3>
+        <p class="meta"><b>OnePyramid</b> · Nigeria</p>
+        <p class="desc">Key Responsibilities: Develop and maintain backend applications and APIs. Design and optimize databases and system architecture. Integrate third-party APIs and services. Ensure application</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/senior-backend-developer-onepyramid" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Backend Engineer at Optisoft Technology Company Ltd
+Optisoft Technology Company Ltd is seeking a qualified Backend Engineer with strong Java experience to join our growing technology team. Requirements: Want Certified or professionally ex
+Apply: https://www.myjobmag.com/job/backend-engineer-optisoft-technology-company-ltd">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/backend-engineer-optisoft-technology-company-ltd" target="_blank" rel="noopener">Backend Engineer</a></h3>
+        <p class="meta"><b>Optisoft Technology Company Ltd</b> · Nigeria</p>
+        <p class="desc">Optisoft Technology Company Ltd is seeking a qualified Backend Engineer with strong Java experience to join our growing technology team. Requirements: Want Certified or professionally ex</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/backend-engineer-optisoft-technology-company-ltd" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Intern - Backend Engineer at LocalBuka
+Interested applicant(s) should possess relevant qualifications and experience
+Apply: https://www.myjobmag.com/job/intern-backend-engineer-localbuka">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/intern-backend-engineer-localbuka" target="_blank" rel="noopener">Intern - Backend Engineer</a></h3>
+        <p class="meta"><b>LocalBuka</b> · Nigeria</p>
+        <p class="desc">Interested applicant(s) should possess relevant qualifications and experience</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/intern-backend-engineer-localbuka" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Backend Engineer, NodeJS at Flutterwave
+As a NodeJS Backend Engineer, you will work on developing, scaling, and maintaining high-performance backend services that power our cutting-edge payment systems. Key Responsibilities include
+Apply: https://www.myjobmag.com/job/backend-engineer-nodejs-flutterwave-2">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/backend-engineer-nodejs-flutterwave-2" target="_blank" rel="noopener">Backend Engineer, NodeJS</a></h3>
+        <p class="meta"><b>Flutterwave</b> · Nigeria</p>
+        <p class="desc">As a NodeJS Backend Engineer, you will work on developing, scaling, and maintaining high-performance backend services that power our cutting-edge payment systems. Key Responsibilities include</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/backend-engineer-nodejs-flutterwave-2" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Backend Engineer at Kuda Bank
+Role We are looking for a result-driven and analytical software engineer (backend) who will troubleshoot and improve existing backend applications and processes. S/he will use his or her unde
+Apply: https://www.myjobmag.com/job/backend-engineer-kuda-bank-4">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/backend-engineer-kuda-bank-4" target="_blank" rel="noopener">Backend Engineer</a></h3>
+        <p class="meta"><b>Kuda Bank</b> · Nigeria</p>
+        <p class="desc">Role We are looking for a result-driven and analytical software engineer (backend) who will troubleshoot and improve existing backend applications and processes. S/he will use his or her unde</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/backend-engineer-kuda-bank-4" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+    </div>
+    </section>
+    <section id="fullstack">
+      <div class="sec-head">
+        <h2>Full-stack</h2>
+        <span class="tally">10/10</span>
+        <p class="sec-blurb">Roles that expect you across the whole stack.</p>
+      </div>
+      <div class="grid">
+      <article class="card" data-share="Senior Full-Stack Engineer
+Senior Full-Stack Engineer — Nigeria.
+Apply: https://www.jobberman.com/listings/senior-full-stack-engineer-2k88xk">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/senior-full-stack-engineer-2k88xk" target="_blank" rel="noopener">Senior Full-Stack Engineer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Senior Full-Stack Engineer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/senior-full-stack-engineer-2k88xk" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Full-Stack Developer
+Senior Full-Stack Developer — Nigeria.
+Apply: https://www.jobberman.com/listings/senior-full-stack-developer-onsite-enugu-wrnxd5">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/senior-full-stack-developer-onsite-enugu-wrnxd5" target="_blank" rel="noopener">Senior Full-Stack Developer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Senior Full-Stack Developer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/senior-full-stack-developer-onsite-enugu-wrnxd5" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Software Engineer, Full Stack
+Software Engineer, Full Stack — Nigeria.
+Apply: https://www.jobberman.com/listings/software-engineer-full-stack-z8rzed">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/software-engineer-full-stack-z8rzed" target="_blank" rel="noopener">Software Engineer, Full Stack</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Software Engineer, Full Stack — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/software-engineer-full-stack-z8rzed" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Fullstack Software Engineer
+Senior Fullstack Software Engineer — Nigeria.
+Apply: https://www.jobberman.com/listings/senior-fullstack-software-engineer-nodejs-react-web3-pgn0pv">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/senior-fullstack-software-engineer-nodejs-react-web3-pgn0pv" target="_blank" rel="noopener">Senior Fullstack Software Engineer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Senior Fullstack Software Engineer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/senior-fullstack-software-engineer-nodejs-react-web3-pgn0pv" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Junior Full-Stack Developer
+Junior Full-Stack Developer — Nigeria.
+Apply: https://www.jobberman.com/listings/junior-full-stack-developer-j65q9v">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/junior-full-stack-developer-j65q9v" target="_blank" rel="noopener">Junior Full-Stack Developer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Junior Full-Stack Developer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/junior-full-stack-developer-j65q9v" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Open Positions
+🚨 HIRING Siniim Open Positions: AI Video Producer Digital Marketer Full-Stack Engineer About the Company Siniim is an AI-native video production platform building production infrastructure for African stories. The company combines AI technology with storytelling to make video content production faster and more scalable. The team is small, fast-moving, and looking for people who are excited about…
+Apply: https://tally.so/r/7R0eB0">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://tally.so/r/7R0eB0" target="_blank" rel="noopener">Open Positions</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">🚨 HIRING Siniim Open Positions: AI Video Producer Digital Marketer Full-Stack Engineer About the Company Siniim is an AI-native video production platform building production infrastructure for African stories. The company combines AI technology with storytelling to make video content production faster and more scalable. The team is small, fast-moving, and looking for people who are excited about…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://tally.so/r/7R0eB0" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://t.me/jobnetworkng" target="_blank" rel="noopener">via Telegram · @jobnetworkng</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Full-Stack / Backend Developer – Core Banking Platform at Finova
+We are looking for an experienced Full-Stack / Backend Developer to manage and develop our financial technology and core banking systems. Responsibilities Develop and maintain backend and fro
+Apply: https://www.myjobmag.com/job/full-stack-backend-developer-core-banking-platform-finova">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/full-stack-backend-developer-core-banking-platform-finova" target="_blank" rel="noopener">Full-Stack / Backend Developer – Core Banking Platform</a></h3>
+        <p class="meta"><b>Finova</b> · Nigeria</p>
+        <p class="desc">We are looking for an experienced Full-Stack / Backend Developer to manage and develop our financial technology and core banking systems. Responsibilities Develop and maintain backend and fro</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/full-stack-backend-developer-core-banking-platform-finova" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Full Stack Developer Instructor at Lagos Data School
+Role Description The Full-stack Developer Instructor is a full-time, on-site role based in Ikeja. This role involves designing and delivering curriculum on full-stack web development, including
+Apply: https://www.myjobmag.com/job/full-stack-developer-instructor-lagos-data-school">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/full-stack-developer-instructor-lagos-data-school" target="_blank" rel="noopener">Full Stack Developer Instructor</a></h3>
+        <p class="meta"><b>Lagos Data School</b> · Nigeria</p>
+        <p class="desc">Role Description The Full-stack Developer Instructor is a full-time, on-site role based in Ikeja. This role involves designing and delivering curriculum on full-stack web development, including</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/full-stack-developer-instructor-lagos-data-school" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Full Stack Web Developer at Candlelight Foundation for Children with Special Needs
+We are looking for a Full Stack Web Developer to join our engineering team and contribute to the development of a live, consumer-facing social community platform. This is a hands-on role for a develop
+Apply: https://www.myjobmag.com/job/full-stack-web-developer-candlelight-foundation-for-children-with-special-needs">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/full-stack-web-developer-candlelight-foundation-for-children-with-special-needs" target="_blank" rel="noopener">Full Stack Web Developer</a></h3>
+        <p class="meta"><b>Candlelight Foundation for Children with Special Needs</b> · Nigeria</p>
+        <p class="desc">We are looking for a Full Stack Web Developer to join our engineering team and contribute to the development of a live, consumer-facing social community platform. This is a hands-on role for a develop</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/full-stack-web-developer-candlelight-foundation-for-children-with-special-needs" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="AskYourPDF at AI Supermarket
+Professional forex trading simulator that replays historical market data so traders can practise strategies risk-free. Test and backtest trading systems across years of tick-level data at any speed, then review statistics on win rate, drawdown and risk-reward. Used by aspiring and experienced traders to build discipline and refine their edge.Text-to-3D and image-to-3D AI platform that generates…
+Apply: https://remoteOK.com/remote-jobs/remote-askyourpdf-ai-supermarket-1136704">
+        <div class="chips"><span class="chip rm">Remote</span></div>
+        <h3><a href="https://remoteOK.com/remote-jobs/remote-askyourpdf-ai-supermarket-1136704" target="_blank" rel="noopener">AskYourPDF</a></h3>
+        <p class="meta"><b>AI Supermarket</b> · Heartâs Content,</p>
+        <p class="desc">Professional forex trading simulator that replays historical market data so traders can practise strategies risk-free. Test and backtest trading systems across years of tick-level data at any speed, then review statistics on win rate, drawdown and risk-reward. Used by aspiring and experienced traders to build discipline and refine their edge.Text-to-3D and image-to-3D AI platform that generates…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://remoteOK.com/remote-jobs/remote-askyourpdf-ai-supermarket-1136704" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://remoteok.com" target="_blank" rel="noopener">via RemoteOK</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+    </div>
+    </section>
+    <section id="mobile">
+      <div class="sec-head">
+        <h2>Mobile</h2>
+        <span class="tally short">9/10</span>
+        <p class="sec-blurb">Android, iOS, React Native and Flutter.</p>
+      </div>
+      <div class="grid">
+      <article class="card" data-share="Mobile Developer
+Mobile Developer — Nigeria.
+Apply: https://www.jobberman.com/listings/cross-platform-mobile-developer-k76kjx">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/cross-platform-mobile-developer-k76kjx" target="_blank" rel="noopener">Mobile Developer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Mobile Developer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/cross-platform-mobile-developer-k76kjx" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Mobile Application Developer at Snaarp
+Job Summary The Mobile Application Developer will design, develop, test, deploy, and maintain Snaarp\&#x27;s mobile applications across Android and iOS platforms. The successful candidate will coll
+Apply: https://www.myjobmag.com/job/mobile-application-developer-snaarp">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/mobile-application-developer-snaarp" target="_blank" rel="noopener">Mobile Application Developer</a></h3>
+        <p class="meta"><b>Snaarp</b> · Nigeria</p>
+        <p class="desc">Job Summary The Mobile Application Developer will design, develop, test, deploy, and maintain Snaarp\&#x27;s mobile applications across Android and iOS platforms. The successful candidate will coll</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/mobile-application-developer-snaarp" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Mobile App Developer at Walex Biz Nigeria Limited
+Job Summary We are looking for a talented and innovative Mobile App Developer to design, develop, test, and maintain high-quality mobile applications for Android and iOS platforms. The ideal c
+Apply: https://www.myjobmag.com/job/mobile-app-developer-walex-biz-nigeria-limited">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/mobile-app-developer-walex-biz-nigeria-limited" target="_blank" rel="noopener">Mobile App Developer</a></h3>
+        <p class="meta"><b>Walex Biz Nigeria Limited</b> · Nigeria</p>
+        <p class="desc">Job Summary We are looking for a talented and innovative Mobile App Developer to design, develop, test, and maintain high-quality mobile applications for Android and iOS platforms. The ideal c</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/mobile-app-developer-walex-biz-nigeria-limited" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Mobile Engineer at Divest
+Interested applicant(s) should possess relevant qualifications and experience
+Apply: https://www.myjobmag.com/job/mobile-engineer-divest">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/mobile-engineer-divest" target="_blank" rel="noopener">Mobile Engineer</a></h3>
+        <p class="meta"><b>Divest</b> · Nigeria</p>
+        <p class="desc">Interested applicant(s) should possess relevant qualifications and experience</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/mobile-engineer-divest" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Mobile Developer at Hampshire Heights Global Company Limited
+Interested applicant(s) should possess relevant qualifications and experience
+Apply: https://www.myjobmag.com/job/mobile-developer-hampshire-heights-global-company-limited">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/mobile-developer-hampshire-heights-global-company-limited" target="_blank" rel="noopener">Mobile Developer</a></h3>
+        <p class="meta"><b>Hampshire Heights Global Company Limited</b> · Nigeria</p>
+        <p class="desc">Interested applicant(s) should possess relevant qualifications and experience</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/mobile-developer-hampshire-heights-global-company-limited" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="iOS Developer at Conclase Consulting
+Role Description The iOS Developer role is a contract, on-site position based in Ikeja. The individual in this role will design, develop, and maintain native iOS applications, collaborating clos
+Apply: https://www.myjobmag.com/job/ios-developer-conclase-consulting-4">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/ios-developer-conclase-consulting-4" target="_blank" rel="noopener">iOS Developer</a></h3>
+        <p class="meta"><b>Conclase Consulting</b> · Nigeria</p>
+        <p class="desc">Role Description The iOS Developer role is a contract, on-site position based in Ikeja. The individual in this role will design, develop, and maintain native iOS applications, collaborating clos</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/ios-developer-conclase-consulting-4" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Engineer, Developer Experience at Flutterwave
+The Role We are looking for a polyglot Senior Engineer who loves building tools for other developers to transform our raw APIs into a world-class, Stripe-level developer ecosystem. You will be resp
+Apply: https://www.myjobmag.com/job/senior-engineer-developer-experience-flutterwave">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/senior-engineer-developer-experience-flutterwave" target="_blank" rel="noopener">Senior Engineer, Developer Experience</a></h3>
+        <p class="meta"><b>Flutterwave</b> · Nigeria</p>
+        <p class="desc">The Role We are looking for a polyglot Senior Engineer who loves building tools for other developers to transform our raw APIs into a world-class, Stripe-level developer ecosystem. You will be resp</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/senior-engineer-developer-experience-flutterwave" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="iOS Developer (x,f,m) at dkbcodefactory
+&amp;lt;p&amp;gt;-- einfügen --&amp;amp;nbsp;&amp;lt;/p&amp;gt; Find Jobs in Germany on Arbeitnow
+Apply: https://www.arbeitnow.com/jobs/companies/dkbcodefactory/ios-developer-xfm-berlin-185340">
+        <div class="chips"></div>
+        <h3><a href="https://www.arbeitnow.com/jobs/companies/dkbcodefactory/ios-developer-xfm-berlin-185340" target="_blank" rel="noopener">iOS Developer (x,f,m)</a></h3>
+        <p class="meta"><b>dkbcodefactory</b> · Berlin</p>
+        <p class="desc">&amp;lt;p&amp;gt;-- einfügen --&amp;amp;nbsp;&amp;lt;/p&amp;gt; Find Jobs in Germany on Arbeitnow</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.arbeitnow.com/jobs/companies/dkbcodefactory/ios-developer-xfm-berlin-185340" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.arbeitnow.com" target="_blank" rel="noopener">via Arbeitnow</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Android Developer - Business Banking (x,f,m) at dkbcodefactory
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;We&amp;lt;/strong&amp;gt;&amp;lt;strong&amp;gt;lcome to DKB Code Factory….&amp;amp;nbsp;&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(185, 106, 217);&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;{ { … &amp;lt;/strong&amp;gt;&amp;lt;strong&amp;gt;a_place_to_stay_yourself:&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;img style=&amp;quot;max-width: 100%;&amp;quot; src=&amp;quot;https://i.imgur.com/CFPUYqd.png&amp;quot…
+Apply: https://www.arbeitnow.com/jobs/companies/dkbcodefactory/android-developer-business-banking-xfm-berlin-153621">
+        <div class="chips"></div>
+        <h3><a href="https://www.arbeitnow.com/jobs/companies/dkbcodefactory/android-developer-business-banking-xfm-berlin-153621" target="_blank" rel="noopener">Android Developer - Business Banking (x,f,m)</a></h3>
+        <p class="meta"><b>dkbcodefactory</b> · Berlin</p>
+        <p class="desc">&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;We&amp;lt;/strong&amp;gt;&amp;lt;strong&amp;gt;lcome to DKB Code Factory….&amp;amp;nbsp;&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(185, 106, 217);&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;{ { … &amp;lt;/strong&amp;gt;&amp;lt;strong&amp;gt;a_place_to_stay_yourself:&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;img style=&amp;quot;max-width: 100%;&amp;quot; src=&amp;quot;https://i.imgur.com/CFPUYqd.png&amp;quot…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.arbeitnow.com/jobs/companies/dkbcodefactory/android-developer-business-banking-xfm-berlin-153621" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.arbeitnow.com" target="_blank" rel="noopener">via Arbeitnow</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+    </div>
+    </section>
+    <section id="devops">
+      <div class="sec-head">
+        <h2>DevOps &amp; Cloud</h2>
+        <span class="tally">10/10</span>
+        <p class="sec-blurb">Infrastructure, pipelines, reliability and cloud platforms.</p>
+      </div>
+      <div class="grid">
+      <article class="card" data-share="Senior DevOps Engineer
+Senior DevOps Engineer — Nigeria.
+Apply: https://www.jobberman.com/listings/senior-devops-engineer-errj44">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/senior-devops-engineer-errj44" target="_blank" rel="noopener">Senior DevOps Engineer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Senior DevOps Engineer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/senior-devops-engineer-errj44" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="DevOps &amp; Cloud Engineer at Corona Management Systems
+Job Description We&#x27;re looking for a skilled DevOps and Cloud Engineer to help design, build, and maintain the infrastructure that powers our products. You&#x27;ll work at the intersection of
+Apply: https://www.myjobmag.com/job/devops-cloud-engineer-corona-management-systems-1">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/devops-cloud-engineer-corona-management-systems-1" target="_blank" rel="noopener">DevOps &amp; Cloud Engineer</a></h3>
+        <p class="meta"><b>Corona Management Systems</b> · Nigeria</p>
+        <p class="desc">Job Description We&#x27;re looking for a skilled DevOps and Cloud Engineer to help design, build, and maintain the infrastructure that powers our products. You&#x27;ll work at the intersection of</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/devops-cloud-engineer-corona-management-systems-1" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior DevOps Engineer at DLM Capital Group
+Tech Stack Cloud: AWS (Primary) IaC: Terraform (Mandatory) Containers: Docker &amp; Kubernetes CI/CD: GitHub Actions &amp; Jenkins Monitoring: Datadog, Prometheus, Grafana Scripting: P
+Apply: https://www.myjobmag.com/job/senior-devops-engineer-dlm-capital-group">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/senior-devops-engineer-dlm-capital-group" target="_blank" rel="noopener">Senior DevOps Engineer</a></h3>
+        <p class="meta"><b>DLM Capital Group</b> · Nigeria</p>
+        <p class="desc">Tech Stack Cloud: AWS (Primary) IaC: Terraform (Mandatory) Containers: Docker &amp; Kubernetes CI/CD: GitHub Actions &amp; Jenkins Monitoring: Datadog, Prometheus, Grafana Scripting: P</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/senior-devops-engineer-dlm-capital-group" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Devops Engineer / Linux Administrator at eHealth4everyone
+Job Summary We are looking for an experienced DevOps Engineer/Linux Administrator to build functional systems that improve customer experience, and collaborate with software developers, sy
+Apply: https://www.myjobmag.com/job/devops-engineer-linux-administrator-ehealth4everyone-12">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/devops-engineer-linux-administrator-ehealth4everyone-12" target="_blank" rel="noopener">Devops Engineer / Linux Administrator</a></h3>
+        <p class="meta"><b>eHealth4everyone</b> · Nigeria</p>
+        <p class="desc">Job Summary We are looking for an experienced DevOps Engineer/Linux Administrator to build functional systems that improve customer experience, and collaborate with software developers, sy</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/devops-engineer-linux-administrator-ehealth4everyone-12" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="DevOps Engineer at Netzence Sustainability Limited
+Role Summary The DevOps Engineer is responsible for ensuring the reliability, scalability, and automation of Netzence’s FinTech infrastructure. This role manages cloud environments, CI/CD
+Apply: https://www.myjobmag.com/job/devops-engineer-netzence-sustainability-limited">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/devops-engineer-netzence-sustainability-limited" target="_blank" rel="noopener">DevOps Engineer</a></h3>
+        <p class="meta"><b>Netzence Sustainability Limited</b> · Nigeria</p>
+        <p class="desc">Role Summary The DevOps Engineer is responsible for ensuring the reliability, scalability, and automation of Netzence’s FinTech infrastructure. This role manages cloud environments, CI/CD</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/devops-engineer-netzence-sustainability-limited" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Engineering Specialist, Application Administration (DevOps/SRE) at Qore
+Log management: Ensure critical logs are visualized, with efficient aggregation and proper archiving to blob storage. CI/CD &amp; Pipeline Management: Ensure smooth automation, testing, and deplo
+Apply: https://www.myjobmag.com/job/senior-engineering-specialist-application-administration-devops-sre-qore">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/senior-engineering-specialist-application-administration-devops-sre-qore" target="_blank" rel="noopener">Senior Engineering Specialist, Application Administration (DevOps/SRE)</a></h3>
+        <p class="meta"><b>Qore</b> · Nigeria</p>
+        <p class="desc">Log management: Ensure critical logs are visualized, with efficient aggregation and proper archiving to blob storage. CI/CD &amp; Pipeline Management: Ensure smooth automation, testing, and deplo</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/senior-engineering-specialist-application-administration-devops-sre-qore" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="DevOps Engineer at Hampshire Heights Global Company Limited
+Interested applicant(s) should possess relevant qualifications and experience
+Apply: https://www.myjobmag.com/job/devops-engineer-hampshire-heights-global-company-limited">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/devops-engineer-hampshire-heights-global-company-limited" target="_blank" rel="noopener">DevOps Engineer</a></h3>
+        <p class="meta"><b>Hampshire Heights Global Company Limited</b> · Nigeria</p>
+        <p class="desc">Interested applicant(s) should possess relevant qualifications and experience</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/devops-engineer-hampshire-heights-global-company-limited" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="DevOps Engineer at Kredete
+Role Overview We are seeking a DevOps Engineer to architect, build, and maintain the robust and scalable infrastructure that powers our platform. In this pivotal role, you will bridge the gap be
+Apply: https://www.myjobmag.com/job/devops-engineer-kredete-2">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/devops-engineer-kredete-2" target="_blank" rel="noopener">DevOps Engineer</a></h3>
+        <p class="meta"><b>Kredete</b> · Nigeria</p>
+        <p class="desc">Role Overview We are seeking a DevOps Engineer to architect, build, and maintain the robust and scalable infrastructure that powers our platform. In this pivotal role, you will bridge the gap be</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/devops-engineer-kredete-2" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="DevOps Intern at Duplo
+As the DevOps Intern, you will work closely with experienced engineers, get hands-on exposure to real infrastructure, and be given tasks you are genuinely responsible for completing. You wi
+Apply: https://www.myjobmag.com/job/devops-intern-duplo">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/devops-intern-duplo" target="_blank" rel="noopener">DevOps Intern</a></h3>
+        <p class="meta"><b>Duplo</b> · Nigeria</p>
+        <p class="desc">As the DevOps Intern, you will work closely with experienced engineers, get hands-on exposure to real infrastructure, and be given tasks you are genuinely responsible for completing. You wi</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/devops-intern-duplo" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="DevOps Engineering Instructor at AppClick Technology
+Key Responsibilities Deliver practical, project-based DevOps training. Teach Linux administration, Bash scripting, networking, Git, and GitHub. Train students on CI/CD pipelines, automation,
+Apply: https://www.myjobmag.com/job/devops-engineering-instructor-appclick-technology">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/devops-engineering-instructor-appclick-technology" target="_blank" rel="noopener">DevOps Engineering Instructor</a></h3>
+        <p class="meta"><b>AppClick Technology</b> · Nigeria</p>
+        <p class="desc">Key Responsibilities Deliver practical, project-based DevOps training. Teach Linux administration, Bash scripting, networking, Git, and GitHub. Train students on CI/CD pipelines, automation,</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/devops-engineering-instructor-appclick-technology" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+    </div>
+    </section>
+    <section id="data">
+      <div class="sec-head">
+        <h2>Data &amp; AI</h2>
+        <span class="tally">10/10</span>
+        <p class="sec-blurb">Data engineering, analytics, machine learning and AI.</p>
+      </div>
+      <div class="grid">
+      <article class="card" data-share="Senior Ai Engineer
+Senior Ai Engineer — Nigeria.
+Apply: https://www.jobberman.com/listings/senior-ai-engineer-8mk2mx">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/senior-ai-engineer-8mk2mx" target="_blank" rel="noopener">Senior Ai Engineer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Senior Ai Engineer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/senior-ai-engineer-8mk2mx" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Independent AI Engineer / Architect at A.Team
+Senior Independent AI Engineer / Architect Remote | Americas, Europe, or Israel Most AI engineers can find work. Finding work worth doing is harder. A.Team is an invite-only network of senior AI engineers, ML engineers, and AI architects building production AI systems for startups, enterprises, and global companies. Since 2020, builders in the network have earned more than $200M working with…
+Apply: https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266">
+        <div class="chips"><span class="chip rm">Remote</span><span class="chip ">$120 - $170 /hour</span></div>
+        <h3><a href="https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266" target="_blank" rel="noopener">Senior Independent AI Engineer / Architect</a></h3>
+        <p class="meta"><b>A.Team</b> · Americas, Europe, Israel</p>
+        <p class="desc">Senior Independent AI Engineer / Architect Remote | Americas, Europe, or Israel Most AI engineers can find work. Finding work worth doing is harder. A.Team is an invite-only network of senior AI engineers, ML engineers, and AI architects building production AI systems for startups, enterprises, and global companies. Since 2020, builders in the network have earned more than $200M working with…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://remotive.com" target="_blank" rel="noopener">via Remotive</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior AI Engineer at Lemon.io
+Are you a talented Senior AI Engineer/Architect looking for a remote job that lets you show your skills and get decent compensation? Look no further than Lemon.io — the marketplace that connects you with hand-picked startups in the US and Europe. What we offer: The rate depends on your skills and experience. We&#x27;ve already paid out over $11M to our engineers. No more hunting for clients or…
+Apply: https://www.workingnomads.com/job/go/1797731/">
+        <div class="chips"><span class="chip rm">Remote</span></div>
+        <h3><a href="https://www.workingnomads.com/job/go/1797731/" target="_blank" rel="noopener">Senior AI Engineer</a></h3>
+        <p class="meta"><b>Lemon.io</b> · Europe, North America, Latin America, APAC</p>
+        <p class="desc">Are you a talented Senior AI Engineer/Architect looking for a remote job that lets you show your skills and get decent compensation? Look no further than Lemon.io — the marketplace that connects you with hand-picked startups in the US and Europe. What we offer: The rate depends on your skills and experience. We&#x27;ve already paid out over $11M to our engineers. No more hunting for clients or…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.workingnomads.com/job/go/1797731/" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.workingnomads.com" target="_blank" rel="noopener">via Working Nomads</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Junior Data Engineer (São Paulo, BR) at Blab
+&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a &amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5 days per week) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of Pennsylvania…
+Apply: https://www.arbeitnow.co.uk/jobs/companies/blab/junior-data-engineer-sao-paulo-br-118043">
+        <div class="chips"><span class="chip rm">Remote</span></div>
+        <h3><a href="https://www.arbeitnow.co.uk/jobs/companies/blab/junior-data-engineer-sao-paulo-br-118043" target="_blank" rel="noopener">Junior Data Engineer (São Paulo, BR)</a></h3>
+        <p class="meta"><b>Blab</b> · São Paulo, BR</p>
+        <p class="desc">&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a &amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5 days per week) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of Pennsylvania…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.arbeitnow.co.uk/jobs/companies/blab/junior-data-engineer-sao-paulo-br-118043" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.arbeitnow.com" target="_blank" rel="noopener">via Arbeitnow</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Junior Data Engineer (Philadelphia, PA) at Blab
+&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a &amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5 days per week) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of Pennsylvania…
+Apply: https://www.arbeitnow.co.uk/jobs/companies/blab/junior-data-engineer-philadelphia-pa-philadelphia-pa-metro-area-384650">
+        <div class="chips"><span class="chip rm">Remote</span></div>
+        <h3><a href="https://www.arbeitnow.co.uk/jobs/companies/blab/junior-data-engineer-philadelphia-pa-philadelphia-pa-metro-area-384650" target="_blank" rel="noopener">Junior Data Engineer (Philadelphia, PA)</a></h3>
+        <p class="meta"><b>Blab</b> · Philadelphia, PA metro area</p>
+        <p class="desc">&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a &amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5 days per week) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of Pennsylvania…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.arbeitnow.co.uk/jobs/companies/blab/junior-data-engineer-philadelphia-pa-philadelphia-pa-metro-area-384650" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.arbeitnow.com" target="_blank" rel="noopener">via Arbeitnow</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Junior Data Engineer (New York, NY) at Blab
+&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a &amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5 days per week) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of Pennsylvania…
+Apply: https://www.arbeitnow.co.uk/jobs/companies/blab/junior-data-engineer-new-york-ny-new-york-city-ny-metro-area-354342">
+        <div class="chips"><span class="chip rm">Remote</span></div>
+        <h3><a href="https://www.arbeitnow.co.uk/jobs/companies/blab/junior-data-engineer-new-york-ny-new-york-city-ny-metro-area-354342" target="_blank" rel="noopener">Junior Data Engineer (New York, NY)</a></h3>
+        <p class="meta"><b>Blab</b> · New York City, NY metro area</p>
+        <p class="desc">&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a &amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5 days per week) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of Pennsylvania…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.arbeitnow.co.uk/jobs/companies/blab/junior-data-engineer-new-york-ny-new-york-city-ny-metro-area-354342" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.arbeitnow.com" target="_blank" rel="noopener">via Arbeitnow</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Data Analyst (London, UK) at Blab
+&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a&amp;amp;nbsp;&amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5DWW) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of the Netherlands…
+Apply: https://www.arbeitnow.co.uk/jobs/companies/blab/data-analyst-london-uk-184054">
+        <div class="chips"><span class="chip rm">Remote</span></div>
+        <h3><a href="https://www.arbeitnow.co.uk/jobs/companies/blab/data-analyst-london-uk-184054" target="_blank" rel="noopener">Data Analyst (London, UK)</a></h3>
+        <p class="meta"><b>Blab</b> · London</p>
+        <p class="desc">&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a&amp;amp;nbsp;&amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5DWW) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of the Netherlands…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.arbeitnow.co.uk/jobs/companies/blab/data-analyst-london-uk-184054" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.arbeitnow.com" target="_blank" rel="noopener">via Arbeitnow</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Data Analyst (Amsterdam, NLD) at Blab
+&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a &amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5DWW) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of the Netherlands or in the…
+Apply: https://www.arbeitnow.co.uk/jobs/companies/blab/data-analyst-amsterdam-nld-124096">
+        <div class="chips"><span class="chip rm">Remote</span></div>
+        <h3><a href="https://www.arbeitnow.co.uk/jobs/companies/blab/data-analyst-amsterdam-nld-124096" target="_blank" rel="noopener">Data Analyst (Amsterdam, NLD)</a></h3>
+        <p class="meta"><b>Blab</b> · Amsterdam, NL</p>
+        <p class="desc">&amp;lt;div class=&amp;quot;content-intro&amp;quot;&amp;gt;&amp;lt;hr&amp;gt; &amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;span style=&amp;quot;font-weight: 400;&amp;quot;&amp;gt;This is a &amp;lt;strong&amp;gt;Full-Time&amp;lt;/strong&amp;gt; Role (40 hours per week, 5DWW) with no option for part-time work. While this is a remote-first opportunity, the candidate filling this role must be a resident of the Netherlands or in the…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.arbeitnow.co.uk/jobs/companies/blab/data-analyst-amsterdam-nld-124096" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.arbeitnow.com" target="_blank" rel="noopener">via Arbeitnow</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Data Scientist with focus Bioinformatics / Diagnostics (f/m/d - part/full-time) at Staburo
+Your responsibilities will include Analysis of multiomics data (e.g., NGS, transcriptomics, metabolomics) in oncology / inflammation Support non-clinical / clinical development in all phases, analysis plan (e.g. SAP), reporting Implementation and reporting of exploratory biomarker analyses Serving clients with ad-hoc data analysis requests and statistical consulting Following quality and…
+Apply: https://www.arbeitnow.com/jobs/companies/staburo/data-scientist-with-focus-bioinformatics-diagnostics-part-full-time-munich-368417">
+        <div class="chips"></div>
+        <h3><a href="https://www.arbeitnow.com/jobs/companies/staburo/data-scientist-with-focus-bioinformatics-diagnostics-part-full-time-munich-368417" target="_blank" rel="noopener">Data Scientist with focus Bioinformatics / Diagnostics (f/m/d - part/full-time)</a></h3>
+        <p class="meta"><b>Staburo</b> · Munich</p>
+        <p class="desc">Your responsibilities will include Analysis of multiomics data (e.g., NGS, transcriptomics, metabolomics) in oncology / inflammation Support non-clinical / clinical development in all phases, analysis plan (e.g. SAP), reporting Implementation and reporting of exploratory biomarker analyses Serving clients with ad-hoc data analysis requests and statistical consulting Following quality and…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.arbeitnow.com/jobs/companies/staburo/data-scientist-with-focus-bioinformatics-diagnostics-part-full-time-munich-368417" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.arbeitnow.com" target="_blank" rel="noopener">via Arbeitnow</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Data Engineer (m/f/d) at Dishdigital
+Over 9,821 Jobs in Germany for 2026. English &amp;amp; German-speaking roles in Berlin, Munich, Hamburg, Remote and more. Verified job postings with salary transparency – apply today on Arbeitnow.
+Apply: https://www.arbeitnow.com/jobs/companies/dishdigital/senior-data-engineer-dusseldorf-454148">
+        <div class="chips"></div>
+        <h3><a href="https://www.arbeitnow.com/jobs/companies/dishdigital/senior-data-engineer-dusseldorf-454148" target="_blank" rel="noopener">Senior Data Engineer (m/f/d)</a></h3>
+        <p class="meta"><b>Dishdigital</b> · Düsseldorf</p>
+        <p class="desc">Over 9,821 Jobs in Germany for 2026. English &amp;amp; German-speaking roles in Berlin, Munich, Hamburg, Remote and more. Verified job postings with salary transparency – apply today on Arbeitnow.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.arbeitnow.com/jobs/companies/dishdigital/senior-data-engineer-dusseldorf-454148" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.arbeitnow.com" target="_blank" rel="noopener">via Arbeitnow</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+    </div>
+    </section>
+    <section id="qa_security">
+      <div class="sec-head">
+        <h2>QA &amp; Security</h2>
+        <span class="tally short">7/10</span>
+        <p class="sec-blurb">Testing, automation and cybersecurity. Thinner most days — that is honest, not broken.</p>
+      </div>
+      <div class="grid">
+      <article class="card" data-share="Senior Cybersecurity Engineer
+Senior Cybersecurity Engineer — Nigeria.
+Apply: https://www.jobberman.com/listings/senior-cybersecurity-engineer-2kkn6v">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobberman.com/listings/senior-cybersecurity-engineer-2kkn6v" target="_blank" rel="noopener">Senior Cybersecurity Engineer</a></h3>
+        <p class="meta">Nigeria</p>
+        <p class="desc">Senior Cybersecurity Engineer — Nigeria.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobberman.com/listings/senior-cybersecurity-engineer-2kkn6v" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobberman.com" target="_blank" rel="noopener">via Jobberman</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Application Security Engineer at Moniepoint Inc.
+About the Role We are seeking a highly skilled and experienced Application Security Specialist to join our dynamic team. The ideal candidate will play a crucial role in safeguarding our organi
+Apply: https://www.myjobmag.com/job/application-security-engineer-moniepoint-2">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/application-security-engineer-moniepoint-2" target="_blank" rel="noopener">Application Security Engineer</a></h3>
+        <p class="meta"><b>Moniepoint Inc.</b> · Nigeria</p>
+        <p class="desc">About the Role We are seeking a highly skilled and experienced Application Security Specialist to join our dynamic team. The ideal candidate will play a crucial role in safeguarding our organi</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/application-security-engineer-moniepoint-2" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Quality Assurance Engineer at iRecharge Tech-Innovations
+Position Overview We are seeking a highly responsible and self-motivated QA Engineer who thrives in a fast-paced environment and can deliver exceptional results with minimal supervision. The ide
+Apply: https://www.myjobmag.com/job/quality-assurance-engineer-irecharge-tech-innovations">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/quality-assurance-engineer-irecharge-tech-innovations" target="_blank" rel="noopener">Quality Assurance Engineer</a></h3>
+        <p class="meta"><b>iRecharge Tech-Innovations</b> · Nigeria</p>
+        <p class="desc">Position Overview We are seeking a highly responsible and self-motivated QA Engineer who thrives in a fast-paced environment and can deliver exceptional results with minimal supervision. The ide</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/quality-assurance-engineer-irecharge-tech-innovations" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Quality Assurance Engineer at Afriex
+About the job Afriex is hiring a Quality Assurance Engineer to help ensure our software products meet the highest quality standards before release to the public. In this role, you will be resp
+Apply: https://www.myjobmag.com/job/quality-assurance-engineer-afriex">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/quality-assurance-engineer-afriex" target="_blank" rel="noopener">Quality Assurance Engineer</a></h3>
+        <p class="meta"><b>Afriex</b> · Nigeria</p>
+        <p class="desc">About the job Afriex is hiring a Quality Assurance Engineer to help ensure our software products meet the highest quality standards before release to the public. In this role, you will be resp</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/quality-assurance-engineer-afriex" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Quality Assurance Engineer at Moniepoint Inc.
+The Quality Assurance Analyst responsibilities include designing and implementing tests, debugging, and defining corrective actions. You will also review system requirements and track quality assur
+Apply: https://www.myjobmag.com/job/quality-assurance-engineer-moniepoint">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.myjobmag.com/job/quality-assurance-engineer-moniepoint" target="_blank" rel="noopener">Quality Assurance Engineer</a></h3>
+        <p class="meta"><b>Moniepoint Inc.</b> · Nigeria</p>
+        <p class="desc">The Quality Assurance Analyst responsibilities include designing and implementing tests, debugging, and defining corrective actions. You will also review system requirements and track quality assur</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.myjobmag.com/job/quality-assurance-engineer-moniepoint" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.myjobmag.com" target="_blank" rel="noopener">via MyJobMag</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Offensive Cybersecurity Engineer - Red Team at Techno Vista Dynamics
+About the Role We are actively seeking an experienced Red Team Offensive Security Specialist to join our remote cybersecurity team. In this role, you will conduct deep-dive, authorized offensive security assessments to identify, exploit, and validate critical vulnerabilities within active production environments. We are a results-oriented team that values practical execution, advanced…
+Apply: https://www.workingnomads.com/job/go/1781770/">
+        <div class="chips"><span class="chip rm">Remote</span></div>
+        <h3><a href="https://www.workingnomads.com/job/go/1781770/" target="_blank" rel="noopener">Offensive Cybersecurity Engineer - Red Team</a></h3>
+        <p class="meta"><b>Techno Vista Dynamics</b> · APAC,Middle East</p>
+        <p class="desc">About the Role We are actively seeking an experienced Red Team Offensive Security Specialist to join our remote cybersecurity team. In this role, you will conduct deep-dive, authorized offensive security assessments to identify, exploit, and validate critical vulnerabilities within active production environments. We are a results-oriented team that values practical execution, advanced…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.workingnomads.com/job/go/1781770/" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.workingnomads.com" target="_blank" rel="noopener">via Working Nomads</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="QA Tester Entry Level at Ace IT Careers
+Looking to start or restart your career in Software Quality Assurance?Ace IT Careers is reviewing candidates for QA Tester and QA Analyst opportunities with employers and staffing partners across the United States.This opportunity may be suitable for r... Please mention the word **SMOOTHES** and tag RMTAyLjkwLjk4LjI1Mg== when applying to show you read the job post completely…
+Apply: https://remoteOK.com/remote-jobs/remote-qa-tester-entry-level-ace-it-careers-1136701">
+        <div class="chips"><span class="chip rm">Remote</span></div>
+        <h3><a href="https://remoteOK.com/remote-jobs/remote-qa-tester-entry-level-ace-it-careers-1136701" target="_blank" rel="noopener">QA Tester Entry Level</a></h3>
+        <p class="meta"><b>Ace IT Careers</b> · Remote</p>
+        <p class="desc">Looking to start or restart your career in Software Quality Assurance?Ace IT Careers is reviewing candidates for QA Tester and QA Analyst opportunities with employers and staffing partners across the United States.This opportunity may be suitable for r... Please mention the word **SMOOTHES** and tag RMTAyLjkwLjk4LjI1Mg== when applying to show you read the job post completely…</p>
+        <div class="card-foot">
+          <a class="apply" href="https://remoteOK.com/remote-jobs/remote-qa-tester-entry-level-ace-it-careers-1136701" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://remoteok.com" target="_blank" rel="noopener">via RemoteOK</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+    </div>
+    </section>
+    <section id="design_product">
+      <div class="sec-head">
+        <h2>Design &amp; Product</h2>
+        <span class="tally">10/10</span>
+        <p class="sec-blurb">Product design, UI/UX and product management for technical teams.</p>
+      </div>
+      <div class="grid">
+      <article class="card" data-share="Principal Piping Design Engineer at Alpha Bravo Integrated Services Limited
+Apply for Principal Piping Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/principal-piping-design-engineer-at-alpha-bravo-integrated-services-limited-308965">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/principal-piping-design-engineer-at-alpha-bravo-integrated-services-limited-308965" target="_blank" rel="noopener">Principal Piping Design Engineer</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Principal Piping Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/principal-piping-design-engineer-at-alpha-bravo-integrated-services-limited-308965" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Lead Mechanical Design Engineer at Alpha Bravo Integrated Services Limited
+Apply for Lead Mechanical Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/lead-mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308964">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/lead-mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308964" target="_blank" rel="noopener">Lead Mechanical Design Engineer</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Lead Mechanical Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/lead-mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308964" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Piping Design Engineer at Alpha Bravo Integrated Services Limited
+Apply for Senior Piping Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/senior-piping-design-engineer-at-alpha-bravo-integrated-services-limited-308963">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/senior-piping-design-engineer-at-alpha-bravo-integrated-services-limited-308963" target="_blank" rel="noopener">Senior Piping Design Engineer</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Senior Piping Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/senior-piping-design-engineer-at-alpha-bravo-integrated-services-limited-308963" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Quality Design Engineer at Alpha Bravo Integrated Services Limited
+Apply for Senior Quality Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/senior-quality-design-engineer-at-alpha-bravo-integrated-services-limited-308962">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/senior-quality-design-engineer-at-alpha-bravo-integrated-services-limited-308962" target="_blank" rel="noopener">Senior Quality Design Engineer</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Senior Quality Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/senior-quality-design-engineer-at-alpha-bravo-integrated-services-limited-308962" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Principal Mechanical Design Engineer at Alpha Bravo Integrated Services Limited
+Apply for Principal Mechanical Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/principal-mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308960">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/principal-mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308960" target="_blank" rel="noopener">Principal Mechanical Design Engineer</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Principal Mechanical Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/principal-mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308960" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Process Design Engineer at Alpha Bravo Integrated Services Limited
+Apply for Senior Process Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/senior-process-design-engineer-at-alpha-bravo-integrated-services-limited-308959">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/senior-process-design-engineer-at-alpha-bravo-integrated-services-limited-308959" target="_blank" rel="noopener">Senior Process Design Engineer</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Senior Process Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/senior-process-design-engineer-at-alpha-bravo-integrated-services-limited-308959" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Mechanical Design Engineer at Alpha Bravo Integrated Services Limited
+Apply for Mechanical Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308956">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308956" target="_blank" rel="noopener">Mechanical Design Engineer</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Mechanical Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308956" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Principal Civil / Structural Design Engineer Lead at Alpha Bravo Integrated Services Limited
+Apply for Principal Civil / Structural Design Engineer Lead at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/principal-civil-structural-design-engineer-lead-at-alpha-bravo-integrated-services-limited-308955">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/principal-civil-structural-design-engineer-lead-at-alpha-bravo-integrated-services-limited-308955" target="_blank" rel="noopener">Principal Civil / Structural Design Engineer Lead</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Principal Civil / Structural Design Engineer Lead at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/principal-civil-structural-design-engineer-lead-at-alpha-bravo-integrated-services-limited-308955" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Principal Process Design Engineer at Alpha Bravo Integrated Services Limited
+Apply for Principal Process Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/principal-process-design-engineer-at-alpha-bravo-integrated-services-limited-308954">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/principal-process-design-engineer-at-alpha-bravo-integrated-services-limited-308954" target="_blank" rel="noopener">Principal Process Design Engineer</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Principal Process Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/principal-process-design-engineer-at-alpha-bravo-integrated-services-limited-308954" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+      <article class="card" data-share="Senior Mechanical Design Engineer at Alpha Bravo Integrated Services Limited
+Apply for Senior Mechanical Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.
+Apply: https://www.jobzilla.ng/jobs/senior-mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308953">
+        <div class="chips"><span class="chip ng">Nigeria</span></div>
+        <h3><a href="https://www.jobzilla.ng/jobs/senior-mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308953" target="_blank" rel="noopener">Senior Mechanical Design Engineer</a></h3>
+        <p class="meta"><b>Alpha Bravo Integrated Services Limited</b> · Nigeria</p>
+        <p class="desc">Apply for Senior Mechanical Design Engineer at Alpha Bravo Integrated Services Limited, plus more job opportunities available in Nigeria today.</p>
+        <div class="card-foot">
+          <a class="apply" href="https://www.jobzilla.ng/jobs/senior-mechanical-design-engineer-at-alpha-bravo-integrated-services-limited-308953" target="_blank" rel="noopener">Apply &rarr;</a>
+          <a class="src" href="https://www.jobzilla.ng" target="_blank" rel="noopener">via Jobzilla NG</a>
+          <button class="mini" onclick="shareJob(this)">Share</button>
+          <button class="mini" onclick="copyJob(this)">Copy</button>
+        </div>
+      </article>
+    </div>
+    </section>
+
+  <div class="caution">
+    <h2>Before anyone applies</h2>
+    <ul>
+      <li>No real employer charges an application, training or processing fee. Postings
+        mentioning one are dropped automatically and never appear here.</li>
+      <li>Check the company on Nairaland and Glassdoor before an interview.</li>
+      <li>For global remote roles, confirm early that they can pay into Nigeria.</li>
+      <li>Found a bad listing that slipped through? Report it so it gets blocked.</li>
+    </ul>
+  </div>
+
+  <footer>
+    Built for The Engineer Network ·
+    generated Tuesday 18 August 2026 · 76 roles published.<br>
+    Listings link to the original posting on the source board. Job data via the
+    sources credited on each card. Inclusion is not an endorsement of any employer.
+  </footer>
+
+</div>
+<script>
+function toast(btn, msg){
+  const old = btn.textContent;
+  btn.textContent = msg;
+  setTimeout(() => { btn.textContent = old; }, 1400);
+}
+function copyJob(btn){
+  const c = btn.closest('.card');
+  const text = c.dataset.share;
+  navigator.clipboard.writeText(text).then(() => toast(btn, 'Copied'));
+}
+function shareJob(btn){
+  const c = btn.closest('.card');
+  window.open('https://wa.me/?text=' + encodeURIComponent(c.dataset.share), '_blank');
+}
+</script>
+</body>
+</html>

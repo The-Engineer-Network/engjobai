@@ -1,0 +1,5 @@
+httpx>=0.27
+selectolax>=0.3.21
+feedparser>=6.0.11
+PyYAML>=6.0
+python-dotenv>=1.0

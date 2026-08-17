@@ -1,0 +1,43 @@
+name: Daily job board
+
+# Runs four times a day and publishes once. The split is deliberate: some
+# boards (HotNigerianJobs especially) show only a rolling window of the very
+# latest posts, so polling once a day silently misses jobs that appeared and
+# scrolled off.
+on:
+  schedule:
+    - cron: "0 3 * * *"    # 04:00 WAT — the publishing run
+    - cron: "0 8 * * *"    # 09:00 WAT — top-up
+    - cron: "0 12 * * *"   # 13:00 WAT — top-up
+    - cron: "0 16 * * *"   # 17:00 WAT — top-up
+  workflow_dispatch:        # lets you trigger a run by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build the board
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: llama-3.1-8b-instant
+        run: python run.py
+
+      - name: Commit the day's page and the seen-jobs database
+        run: |
+          git config user.name  "eng-job-engine"
+          git config user.email "actions@github.com"
+          git add site jobs.db
+          git diff --staged --quiet || git commit -m "jobs: $(date -u +%Y-%m-%d\ %H:%M)"
+          git push
