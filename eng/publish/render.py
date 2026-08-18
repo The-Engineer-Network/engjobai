@@ -244,7 +244,7 @@ def render(buckets: dict[str, list[Job]], config: dict, day: str | None = None) 
         n = len(buckets.get(t["key"], []))
         if n:
             summary_lines.append(f"{t['label']}: {n}")
-    summary_lines += ["", f"{total} verified roles, every link checked open this morning."]
+    summary_lines += ["", f"{total} verified roles, every link checked against its source this morning."]
     if base_url:
         summary_lines.append(f"{base_url}/{day}.html")
     share_msg = "\n".join(summary_lines)
@@ -288,7 +288,7 @@ def render(buckets: dict[str, list[Job]], config: dict, day: str | None = None) 
     <p class="eyebrow">{pretty_day}</p>
     <h1>{total} verified tech roles, sorted by track.</h1>
     <p class="lede">Collected this morning from Nigerian job boards, African startup boards
-      and global remote boards. Every link was checked open before it was published.</p>
+      and global remote boards. Every link was checked against its source before it was published.</p>
     <div class="counts">{counts}</div>
   </header>
 

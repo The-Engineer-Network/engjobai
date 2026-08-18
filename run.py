@@ -102,9 +102,24 @@ def main() -> int:
     else:
         rule("Verifying links")
         max_age = int(config.get("rules", {}).get("max_age_days", 14))
-        alive, vstats = verifier.verify(classified, max_age)
+        # A posting from a structured feed carries its own liveness evidence:
+        # the provider listed it minutes ago. Scraped boards get no such
+        # benefit, so the fetch stays mandatory for them.
+        feeds = frozenset(s["id"] for s in config["sources"]
+                          if s.get("kind") in ("json_api", "rss"))
+        alive, vstats = verifier.verify(classified, max_age, feeds)
         print(f"  {len(alive)} open  "
               f"(dropped {vstats['dropped_dead']} dead, {vstats['dropped_age']} too old)")
+        if vstats.get("feed_trusted"):
+            print(f"  {vstats['feed_trusted']} kept on feed evidence "
+                  f"(host refused us, provider still lists them)")
+        if vstats.get("breakdown"):
+            detail = ", ".join(f"{name} {count}" for name, count
+                               in sorted(vstats["breakdown"].items(),
+                                         key=lambda kv: -kv[1]))
+            print(f"  why: {detail}")
+        for host, count in vstats.get("offenders", {}).items():
+            print(f"       {count:>4}  {host}")
 
     # 4b. Descriptions — after verification, so we can reuse the pages it fetched
     rule("Writing descriptions")
