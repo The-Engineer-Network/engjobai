@@ -130,13 +130,43 @@ cp .env.example .env
 # paste your key from https://console.groq.com/keys
 ```
 
-**Groq's free tier is enough**: 30 req/min, 6,000 tokens/min, 14,400 req/day.
-The engine batches 20 jobs per call and throttles to stay well inside it. Rules
-run first precisely so the AI only sees the ~20% that need judgment.
+### Which model
 
-If you outgrow it: `llama-3.1-8b-instant` costs about **$1/month** at this volume.
-`llama-3.3-70b-versatile` about **$11/month**. The LLM layer sits behind
-`eng/llm.py`, so swapping providers is an afternoon.
+Groq has **retired the Llama models**. Verified working against the live API,
+August 2026:
+
+| Model | Notes |
+|---|---|
+| `openai/gpt-oss-20b` | Fastest and cheapest, correct on this task — **the default** |
+| `openai/gpt-oss-120b` | Stronger, similar latency, costs more |
+| `qwen/qwen3.6-27b` | Also correct, slightly slower |
+
+Check the current list any time:
+
+```bash
+curl -H "Authorization: Bearer $GROQ_API_KEY" https://api.groq.com/openai/v1/models
+```
+
+### Two things that will bite you if you change the AI code
+
+**1. `max_tokens` must stay generous.** Every model Groq now offers is a
+reasoning model that spends tokens thinking before answering. At 900 they run
+out mid-object and Groq rejects the entire call with *"Failed to validate
+JSON"*. The default is 1500, with an automatic retry at 3000.
+
+**2. The free tier's real constraint is tokens, not requests.** The limits are
+30 req/min and **8,000 tokens/min** — and Groq reserves `max_tokens` up front
+rather than charging actual usage. A call asking for 1,500 output tokens books
+~2,500 against the window even though it really spends ~350. Throttling on
+request count alone looks safe and still earns a wall of 429s; that mistake cost
+7 of 13 calls on the first run here. `eng/llm.py` keeps a rolling 60-second
+token window and paces against it, and also backs off when Groq's
+`x-ratelimit-remaining-tokens` header runs low.
+
+The trade is wall-clock: a full AI-assisted run takes several minutes rather
+than one. Irrelevant for a 4am cron job.
+
+The LLM layer sits behind `eng/llm.py`, so swapping providers is an afternoon.
 
 The engine **never fails on AI problems.** Missing key, exhausted tier, Groq
 having a bad day — every call returns `None` and the pipeline falls back to

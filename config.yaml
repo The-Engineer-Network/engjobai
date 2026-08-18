@@ -6,7 +6,7 @@ community:
   site: "https://theengineernetwork.com"
   # Paste your WhatsApp group invite link here. It is shown on the page so
   # people who receive a shared link can join the community themselves.
-  whatsapp_group: ""
+  whatsapp_group: "https://chat.whatsapp.com/IiwoC6BoxPKI7UINKMX13X?mode=gi_t"
   # Where the built pages are published. Used to build share links.
   public_base_url: "https://jobs.theengineernetwork.com"
 

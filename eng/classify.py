@@ -81,6 +81,7 @@ class Classifier:
             return {}
 
         keys = [t["key"] for t in self.tracks]
+        lookup = {k.lower(): k for k in keys}
         system = (
             "You sort software job postings into exactly one track. "
             f"Valid tracks: {', '.join(keys)}, or 'none' if it is not a technology role. "
@@ -98,9 +99,12 @@ class Classifier:
             if not data:
                 continue
             for row in data.get("results", []):
-                track = str(row.get("track", "")).strip()
-                if track in keys:
-                    out[str(row.get("id"))] = track
+                # Models return the label in whatever case they feel like
+                # ("Frontend", "DEVOPS"). Match case-insensitively or we
+                # silently discard correct answers.
+                track = str(row.get("track", "")).strip().lower()
+                if track in lookup:
+                    out[str(row.get("id"))] = lookup[track]
         return out
 
     # -- descriptions --------------------------------------------------------

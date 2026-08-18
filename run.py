@@ -93,7 +93,7 @@ def main() -> int:
           f"{c['unclassified']} unclassifiable")
     print(f"  sorted:  {c['by_rule']} by rules, {c['by_ai']} by AI")
     if llm.enabled:
-        print(f"  AI calls: {llm.calls} ({llm.failures} failed)")
+        print(f"  AI calls: {llm.calls} ok, {llm.failures} failed  [{llm.error_summary()}]")
 
     # 4. Verify -------------------------------------------------------------
     if args.no_verify:
