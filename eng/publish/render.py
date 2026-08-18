@@ -84,19 +84,24 @@ h2{font-size:clamp(1.3rem,3vw,1.65rem);letter-spacing:-.02em;margin:0;font-weigh
 .tally.short{color:var(--accent-2)}
 .sec-blurb{width:100%;margin:.15rem 0 0;color:var(--muted);font-size:.92rem}
 
-.grid{display:grid;gap:.85rem;grid-template-columns:repeat(auto-fill,minmax(21rem,1fr))}
+.grid{display:grid;gap:.85rem;
+  grid-template-columns:repeat(auto-fill,minmax(min(21rem,100%),1fr))}
 
 /* ---- job card ---- */
 .card{background:var(--surface);border:1px solid var(--line);border-radius:8px;
   padding:1.05rem 1.15rem 1rem;display:flex;flex-direction:column;gap:.6rem;
-  transition:border-color .15s,transform .15s}
+  min-width:0;transition:border-color .15s,transform .15s}
 .card:hover{border-color:var(--accent);transform:translateY(-2px)}
-.card h3{margin:0;font-size:1rem;line-height:1.35;letter-spacing:-.01em;font-weight:650}
+.card h3{margin:0;font-size:1rem;line-height:1.35;letter-spacing:-.01em;
+  font-weight:650;overflow-wrap:anywhere}
 .card h3 a{color:var(--text);text-decoration:none}
 .card h3 a:hover{color:var(--accent-2)}
-.meta{font-size:.85rem;color:var(--muted);margin:0}
+.meta{font-size:.85rem;color:var(--muted);margin:0;overflow-wrap:anywhere}
 .meta b{color:var(--text);font-weight:600}
-.desc{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+/* A bare URL or an un-spaced string from a feed is longer than the card. Let it
+   break mid-token rather than paint outside the card and scroll the whole page. */
+.desc{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5;
+  overflow-wrap:anywhere}
 .chips{display:flex;flex-wrap:wrap;gap:.35rem}
 .chip{font-family:var(--mono);font-size:.65rem;letter-spacing:.06em;
   text-transform:uppercase;padding:.2rem .45rem;border-radius:3px;

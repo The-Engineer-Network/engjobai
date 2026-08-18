@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import re
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone
@@ -10,6 +11,8 @@ from email.utils import parsedate_to_datetime
 
 WS = re.compile(r"\s+")
 TAGS = re.compile(r"<[^>]+>")
+# A tag left unterminated by an upstream truncation: "<span" with no ">".
+HALF_TAG = re.compile(r"<\s*/?[a-zA-Z][^>]*$")
 
 
 def to_iso(value) -> str:
@@ -45,10 +48,25 @@ def to_iso(value) -> str:
 
 
 def clean(text: str | None, limit: int = 0) -> str:
-    """Strip tags and collapse whitespace. Optionally truncate on a word boundary."""
+    """Strip tags and collapse whitespace. Optionally truncate on a word boundary.
+
+    Sources disagree about escaping as much as they disagree about dates. Most
+    send plain HTML, several send that HTML entity-escaped, and a few (anything
+    routed through Word or a CMS rich-text field) send it escaped twice. A
+    single tag-strip only catches the first kind, so the rest arrived as literal
+    "&lt;p&gt;" markup on the page. Unescape and strip in a loop until the text
+    settles: three passes covers every double-encoded feed we see, and the loop
+    stops early the moment a pass changes nothing.
+    """
     if not text:
         return ""
-    out = WS.sub(" ", TAGS.sub(" ", str(text))).strip()
+    out = str(text)
+    for _ in range(3):
+        stepped = html.unescape(TAGS.sub(" ", out))
+        if stepped == out:
+            break
+        out = stepped
+    out = WS.sub(" ", HALF_TAG.sub("", TAGS.sub(" ", out))).strip()
     if limit and len(out) > limit:
         out = out[:limit].rsplit(" ", 1)[0].rstrip(",;:.-") + "…"
     return out
