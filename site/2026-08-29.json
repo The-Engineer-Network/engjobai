@@ -1,8 +1,65 @@
 {
-  "frontend": [
+  "frontend": [],
+  "backend": [
     {
-      "title": "Frontend Engineer (UK)",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/bjak/frontend-engineer-uk-london-298887",
+      "title": "Lead Java Developer with IRS MBI Clearance needed",
+      "url": "https://himalayas.app/companies/3m-consultancy/jobs/lead-java-developer-with-irs-mbi-clearance-needed",
+      "source": "himalayas",
+      "scope": "global",
+      "company": "3M Consultancy",
+      "location": "United States",
+      "description": "This is a remote position. Job Title: Lead Java DeveloperLocation: RemoteDuration: Full-TimeNEED IRS MBI Clearance.",
+      "salary": "",
+      "posted_at": "2026-08-29T16:59:16+00:00",
+      "attribution": "Himalayas",
+      "attribution_url": "https://himalayas.app",
+      "track": "backend",
+      "remote": true,
+      "tags": [
+        "Java-Development",
+        "Software-Engineer",
+        "Government-Software-Development",
+        "Backend-Development",
+        "Software-Architecture",
+        "Java-Developer",
+        "Lead-Java-Software-Engineer",
+        "Lead-Java-Engineer"
+      ],
+      "fingerprint": "0ca3d552fce977ab",
+      "first_seen": "2026-08-29T19:02:27+00:00",
+      "verified_at": "2026-08-29T19:02:27+00:00"
+    },
+    {
+      "title": "Data Engineer (Databricks)",
+      "url": "https://himalayas.app/companies/fluent/jobs/data-engineer-databricks",
+      "source": "himalayas",
+      "scope": "global",
+      "company": "Fluent",
+      "location": "Canada",
+      "description": "Fluent is building the next generation advertising network, Partner Monetize & Advertiser Acquisition.",
+      "salary": "",
+      "posted_at": "2026-08-29T17:01:15+00:00",
+      "attribution": "Himalayas",
+      "attribution_url": "https://himalayas.app",
+      "track": "backend",
+      "remote": true,
+      "tags": [
+        "Data-Engineering",
+        "Analytics-Engineering",
+        "Backend-Engineering",
+        "Data-Infrastructure",
+        "Databricks-Data-Engineer",
+        "Databricks-Engineer",
+        "Data-Engineering-(Databricks)",
+        "Data-Engineer"
+      ],
+      "fingerprint": "ff27acf6e269561a",
+      "first_seen": "2026-08-29T19:02:27+00:00",
+      "verified_at": "2026-08-29T19:02:27+00:00"
+    },
+    {
+      "title": "Senior Backend Engineer, Platform & Integrations",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/bjak/senior-backend-engineer-platform-integrations-london-286376",
       "source": "arbeitnow",
       "scope": "global",
       "company": "Bjak",
@@ -12,237 +69,25 @@
       "posted_at": "2026-08-29T12:40:22+00:00",
       "attribution": "Arbeitnow",
       "attribution_url": "https://www.arbeitnow.com",
-      "track": "frontend",
+      "track": "backend",
       "remote": false,
       "tags": [
         "Engineering"
       ],
-      "fingerprint": "c105bfeda951d874",
+      "fingerprint": "b2d03a03b70f9c07",
       "first_seen": "2026-08-29T16:06:25+00:00",
       "verified_at": "2026-08-29T16:06:24+00:00"
     },
     {
-      "title": "Senior Frontend Engineer - Growth Experimentation",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/eucalyptus/senior-frontend-engineer-growth-experimentation-406405",
-      "source": "arbeitnow",
-      "scope": "global",
-      "company": "eucalyptus",
-      "location": "",
-      "description": "About Eucalyptus We're on a mission to make good health last a lifetime. More than 1 billion people live with obesity worldwide, driving preventable chronic conditions. We're here to build better long-term care. Eucalyptus is now part of Hims & Hers, the global leader in personalised health and wellness. Euc is the company behind Juniper, one of the world's largest weight-management programs…",
-      "salary": "",
-      "posted_at": "2026-08-29T12:55:18+00:00",
-      "attribution": "Arbeitnow",
-      "attribution_url": "https://www.arbeitnow.com",
-      "track": "frontend",
-      "remote": false,
-      "tags": [
-        "Engineering"
-      ],
-      "fingerprint": "f27d2ead6d907c69",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:24+00:00"
-    }
-  ],
-  "backend": [
-    {
-      "title": "Senior Back End Engineer",
-      "url": "https://jobicy.com/jobs/151965-senior-back-end-engineer",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Peerspace",
-      "location": "USA",
-      "description": "Senior Back-End Engineer About Peerspace Peerspace is the leading and category defining online marketplace for venue rentals for meetings, productions, and events. We open doors to the most inspiring spaces around the world, from lofts and mansions to storefronts and studios. Over $500M has been transacted through the platform, and our investors include GV (Google…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:53:16+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "backend",
-      "remote": true,
-      "tags": [
-        "Software Engineering"
-      ],
-      "fingerprint": "b9b488abb8ec3d36",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:24+00:00"
-    },
-    {
-      "title": "Commercial Sales Engineer",
-      "url": "https://jobicy.com/jobs/151967-commercial-sales-engineer",
+      "title": "Enterprise Business Development Representative - East",
+      "url": "https://jobicy.com/jobs/151992-enterprise-business-development-representative-east",
       "source": "jobicy",
       "scope": "global",
       "company": "Chainguard",
       "location": "USA",
       "description": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk. Our customers include Fortune 500 enterprises and global industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise…",
       "salary": "",
-      "posted_at": "2026-08-29T10:53:45+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "backend",
-      "remote": true,
-      "tags": [
-        "Sales"
-      ],
-      "fingerprint": "3bf453a2dacdd779",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:21+00:00"
-    },
-    {
-      "title": "Corporate Account Executive - Central",
-      "url": "https://jobicy.com/jobs/151971-corporate-account-executive-central",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Chainguard",
-      "location": "USA",
-      "description": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk. Our customers include Fortune 500 enterprises and global industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:54:45+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "backend",
-      "remote": true,
-      "tags": [
-        "Sales"
-      ],
-      "fingerprint": "7a594dac5429b44c",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:17+00:00"
-    },
-    {
-      "title": "Enterprise Account Executive",
-      "url": "https://jobicy.com/jobs/151980-enterprise-account-executive-16",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Chainguard",
-      "location": "Singapore",
-      "description": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk. Our customers include Fortune 500 enterprises and global industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:56:58+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "backend",
-      "remote": true,
-      "tags": [
-        "Sales"
-      ],
-      "fingerprint": "677ec96bade90ab7",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:14+00:00"
-    },
-    {
-      "title": "Enterprise Account Executive - Central / Midwest",
-      "url": "https://jobicy.com/jobs/151983-enterprise-account-executive-central-midwest",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Chainguard",
-      "location": "USA",
-      "description": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk. Our customers include Fortune 500 enterprises and global industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:57:41+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "backend",
-      "remote": true,
-      "tags": [
-        "Sales"
-      ],
-      "fingerprint": "c60fb78b312e95df",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:10+00:00"
-    },
-    {
-      "title": "Enterprise Account Executive - DACH",
-      "url": "https://jobicy.com/jobs/151985-enterprise-account-executive-dach-2",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Chainguard",
-      "location": "Germany",
-      "description": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk. Our customers include Fortune 500 enterprises and global industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:58:11+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "backend",
-      "remote": true,
-      "tags": [
-        "Sales"
-      ],
-      "fingerprint": "5069f142e3294570",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:08+00:00"
-    },
-    {
-      "title": "Enterprise Account Executive - Denmark",
-      "url": "https://jobicy.com/jobs/151987-enterprise-account-executive-denmark",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Chainguard",
-      "location": "Denmark",
-      "description": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk. Our customers include Fortune 500 enterprises and global industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:58:36+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "backend",
-      "remote": true,
-      "tags": [
-        "Sales"
-      ],
-      "fingerprint": "66f7162e74b5d2c3",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:06+00:00"
-    },
-    {
-      "title": "Enterprise Account Executive - Nordics",
-      "url": "https://jobicy.com/jobs/151988-enterprise-account-executive-nordics",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Chainguard",
-      "location": "Sweden",
-      "description": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk. Our customers include Fortune 500 enterprises and global industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:58:51+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "backend",
-      "remote": true,
-      "tags": [
-        "Sales"
-      ],
-      "fingerprint": "8ece39c7389b7d0e",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:04+00:00"
-    },
-    {
-      "title": "Enterprise Account Executive - South / TOLA",
-      "url": "https://jobicy.com/jobs/151989-enterprise-account-executive-south-tola",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Chainguard",
-      "location": "USA",
-      "description": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk. Our customers include Fortune 500 enterprises and global industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:59:08+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "backend",
-      "remote": true,
-      "tags": [
-        "Sales"
-      ],
-      "fingerprint": "08d2ec0535e03c02",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:02+00:00"
-    },
-    {
-      "title": "Enterprise Business Development Representative - Central",
-      "url": "https://jobicy.com/jobs/151991-enterprise-business-development-representative-central",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Chainguard",
-      "location": "USA",
-      "description": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk. Our customers include Fortune 500 enterprises and global industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:59:39+00:00",
+      "posted_at": "2026-08-29T10:59:55+00:00",
       "attribution": "Jobicy",
       "attribution_url": "https://jobicy.com",
       "track": "backend",
@@ -250,234 +95,137 @@
       "tags": [
         "Business Development"
       ],
-      "fingerprint": "e1d09c05f75d5630",
+      "fingerprint": "a624d6117eed6c01",
       "first_seen": "2026-08-29T16:06:24+00:00",
-      "verified_at": "2026-08-29T16:06:00+00:00"
+      "verified_at": "2026-08-29T16:05:58+00:00"
     }
   ],
   "fullstack": [
     {
-      "title": "Senior Full-Stack Engineer - Shop/Ecosystem",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/eucalyptus/senior-full-stack-engineer-shop-ecosystem-34249",
+      "title": "Founding Senior Talent Partner",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/odin/founding-senior-talent-partner-london-133914",
       "source": "arbeitnow",
       "scope": "global",
-      "company": "eucalyptus",
-      "location": "",
-      "description": "About Eucalyptus We're on a mission to make good health last a lifetime. More than 1 billion people live with obesity worldwide, driving preventable chronic conditions. We're here to build better long-term care. Eucalyptus is now part of Hims & Hers, the global leader in personalised health and wellness. Euc is the company behind Juniper, one of the world's largest weight-management programs…",
+      "company": "Odin",
+      "location": "London",
+      "description": "About Odin Odin is building the investment infrastructure for the future of private markets. We believe capital is one of the most powerful tools for shaping the world - and more people should be putting it to work. Our mission is to make it radically easier to raise and deploy capital, so that anyone, anywhere, can back the companies and ideas they believe in. Our first product is a full-stack…",
       "salary": "",
-      "posted_at": "2026-08-29T12:55:18+00:00",
+      "posted_at": "2026-08-29T15:40:18+00:00",
       "attribution": "Arbeitnow",
       "attribution_url": "https://www.arbeitnow.com",
       "track": "fullstack",
-      "remote": false,
-      "tags": [
-        "Engineering"
-      ],
-      "fingerprint": "c525fc2fdea3734a",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:24+00:00"
-    },
-    {
-      "title": "Full-Stack Engineer - Shop/Ecosystem",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/eucalyptus/full-stack-engineer-shop-ecosystem-408486",
-      "source": "arbeitnow",
-      "scope": "global",
-      "company": "eucalyptus",
-      "location": "",
-      "description": "About Eucalyptus We're on a mission to make good health last a lifetime. More than 1 billion people live with obesity worldwide, driving preventable chronic conditions. We're here to build better long-term care. Eucalyptus is now part of Hims & Hers, the global leader in personalised health and wellness. Euc is the company behind Juniper, one of the world's largest weight-management programs…",
-      "salary": "",
-      "posted_at": "2026-08-29T12:55:18+00:00",
-      "attribution": "Arbeitnow",
-      "attribution_url": "https://www.arbeitnow.com",
-      "track": "fullstack",
-      "remote": false,
-      "tags": [
-        "Engineering"
-      ],
-      "fingerprint": "c4dbb6150d10c9b7",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:24+00:00"
-    }
-  ],
-  "mobile": [],
-  "devops": [],
-  "data": [
-    {
-      "title": "Software Engineer, Machine Learning Platform, New Grad - Quora",
-      "url": "https://jobicy.com/jobs/151979-software-engineer-machine-learning-platform-new-grad-quora",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Quora",
-      "location": "Anywhere",
-      "description": "[Quora is a privately held, \"remote-first\" company. This position can be performed remotely from anywhere in Canada or the United States. Please visit careers.quora.com/eligible-countries for details regarding employment eligibility by country.] About Quora: Quora’s mission is to grow the world's collective intelligence. To do so, we have two platforms: Quora: a global knowledge sharing platform…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:56:43+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "data",
       "remote": true,
       "tags": [
-        "Software Engineering"
+        "People & Talent"
       ],
-      "fingerprint": "b6624b24230428dd",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:15+00:00"
+      "fingerprint": "83a3283171b11a4a",
+      "first_seen": "2026-08-29T19:02:27+00:00",
+      "verified_at": "2026-08-29T19:02:27+00:00"
     },
     {
-      "title": "Data Scientist - Quora",
-      "url": "https://jobicy.com/jobs/151982-data-scientist-quora",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Quora",
-      "location": "Canada, Ireland, USA",
-      "description": "[Quora is a privately held, \"remote-first\" company. This position can be performed remotely from multiple countries around the world. Please visit careers.quora.com/eligible-countries for details regarding employment eligibility by country.] About Quora: Quora’s mission is to grow the world's collective intelligence. To do so, we have two platforms: Quora: a global knowledge sharing platform with…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:57:26+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "data",
-      "remote": true,
-      "tags": [
-        "Data Science & Analytics"
-      ],
-      "fingerprint": "f5f3f6621471c001",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:12+00:00"
-    }
-  ],
-  "qa_security": [
-    {
-      "title": "HEAD OF SALES – IT / OEMs",
-      "url": "http://x.com/jobnetworkng",
-      "source": "telegram_ng",
-      "scope": "nigeria",
-      "company": "",
-      "location": "Nigeria",
-      "description": "🚨 HIRING: HEAD OF SALES – IT / OEMs Location: Victoria Island, Lagos Employment Type: Full-time Work Mode: Fully Onsite Salary: ₦700,000 – ₦800,000/month About the Role LinkOrgNet is seeking an experienced Head of Sales – IT / OEMs to drive business growth through innovative IT and telecommunications solutions, including connectivity, cloud, cybersecurity, VoIP, and managed services. Key…",
-      "salary": "",
-      "posted_at": "",
-      "attribution": "Telegram · @jobnetworkng",
-      "attribution_url": "https://t.me/jobnetworkng",
-      "track": "qa_security",
-      "remote": false,
-      "tags": [],
-      "fingerprint": "32db377a21757984",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:05:59+00:00"
-    },
-    {
-      "title": "Detection & CorpSec Engineer",
-      "url": "https://jobicy.com/jobs/151966-detection-corpsec-engineer",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Quora",
-      "location": "Anywhere",
-      "description": "[Quora is a privately held, \"remote-first\" company. This position can be performed remotely from anywhere in Canada or the United States. Please visit careers.quora.com/eligible-countries for details regarding employment eligibility by country.] About Quora: Quora’s mission is to grow the world's collective intelligence. To do so, we have two platforms: Quora: a global knowledge sharing platform…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:53:31+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "qa_security",
-      "remote": true,
-      "tags": [
-        "Cybersecurity"
-      ],
-      "fingerprint": "1e0c60d9be6b917c",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:23+00:00"
-    },
-    {
-      "title": "Senior Infrastructure Security Software Engineer",
-      "url": "https://jobicy.com/jobs/151970-senior-infrastructure-security-software-engineer",
-      "source": "jobicy",
-      "scope": "global",
-      "company": "Quora",
-      "location": "Anywhere",
-      "description": "[Quora is a privately held, \"remote-first\" company. This position can be performed remotely from anywhere in Canada or the United States. Please visit careers.quora.com/eligible-countries for details regarding employment eligibility by country.] About Quora: Quora’s mission is to grow the world's collective intelligence. To do so, we have two platforms: Quora: a global knowledge sharing platform…",
-      "salary": "",
-      "posted_at": "2026-08-29T10:54:30+00:00",
-      "attribution": "Jobicy",
-      "attribution_url": "https://jobicy.com",
-      "track": "qa_security",
-      "remote": true,
-      "tags": [
-        "Cybersecurity"
-      ],
-      "fingerprint": "a86e3aec1b463f64",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:19+00:00"
-    }
-  ],
-  "design_product": [
-    {
-      "title": "Product Manager - AI Investing App",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/bjak/product-manager-ai-investing-app-london-118279",
-      "source": "arbeitnow",
-      "scope": "global",
-      "company": "Bjak",
-      "location": "United Kingdom",
-      "description": "About KIRA Our mission is to make money smart, reliable and within reach for everyone. In 2019, we built the first mobile-first, insurance platform, enabling insurance to be accessible online by millions in the region. Today, it's the leading insurance platform in Southeast Asia. Today, we are expanding ways to help people in Asia and it includes spending, saving, investing, exchanging…",
-      "salary": "",
-      "posted_at": "2026-08-29T12:40:22+00:00",
-      "attribution": "Arbeitnow",
-      "attribution_url": "https://www.arbeitnow.com",
-      "track": "design_product",
-      "remote": false,
-      "tags": [
-        "Product"
-      ],
-      "fingerprint": "acbe7a3a17fefdc1",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:24+00:00"
-    },
-    {
-      "title": "Product Manager - Stockbroking",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/bjak/product-manager-stockbroking-london-270116",
-      "source": "arbeitnow",
-      "scope": "global",
-      "company": "Bjak",
-      "location": "United Kingdom",
-      "description": "About BJAK The original mission of BJAK is we believe people deserve smarter ways to plan, save and grow their money. This is the origin of our name. Started in 2019, we built the first mobile-first, insurance platform, enabling insurance to be accessible online by millions in the region. Today, its the leading insurance platform in Southeast Asia. Today, we are expanding ways to help people in…",
-      "salary": "",
-      "posted_at": "2026-08-29T12:40:23+00:00",
-      "attribution": "Arbeitnow",
-      "attribution_url": "https://www.arbeitnow.com",
-      "track": "design_product",
-      "remote": false,
-      "tags": [
-        "Product"
-      ],
-      "fingerprint": "9d238ed1fd0d23d8",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:24+00:00"
-    },
-    {
-      "title": "Senior Product Manager, Revenue Cycle Management AI",
-      "url": "https://himalayas.app/companies/pointclickcare/jobs/senior-product-manager-revenue-cycle-management-ai",
+      "title": "Laravel Developer + React - Remote, Latin America",
+      "url": "https://himalayas.app/companies/bluelight-consulting/jobs/laravel-developer-react-remote-latin-america-8137872425",
       "source": "himalayas",
       "scope": "global",
-      "company": "PointClickCare",
-      "location": "Canada",
-      "description": "Job Title: Senior Product Manager, Revenue Cycle Management AI Location: Canada - Remote **Travel to Office expectations**For Remote Roles: If this role is remote, there will be in-office events that will require travel to and from the Mississauga and/or Salt Lake City office.",
+      "company": "Bluelight Consulting",
+      "location": "Nicaragua",
+      "description": "Bluelight Consulting is a leading software consultancy dedicated to designing and developing innovative technology that enhances users' lives.",
       "salary": "",
-      "posted_at": "2026-08-29T14:55:04+00:00",
+      "posted_at": "2026-08-29T16:59:15+00:00",
       "attribution": "Himalayas",
       "attribution_url": "https://himalayas.app",
-      "track": "design_product",
+      "track": "fullstack",
       "remote": true,
       "tags": [
-        "Product-Manager",
-        "AI-Product-Management",
-        "Healthcare-Technology-Product-Management",
-        "Revenue-Cycle-Management",
-        "SaaS-Product-Management",
-        "Senior-AI-Product-Manager",
-        "Senior-AI-Product-Management",
-        "Revenue-Cycle-Product-Management"
+        "Software-Development",
+        "Backend-Development",
+        "Fullstack-Development",
+        "Web-Development",
+        "Engineering",
+        "Laravel-Development",
+        "Remote-Mid-Level-Full-Stack-Developer-(Laravel-React)",
+        "Mid-Level-Laravel-React-Developer"
       ],
-      "fingerprint": "edc348add5d74183",
-      "first_seen": "2026-08-29T16:06:25+00:00",
-      "verified_at": "2026-08-29T16:06:24+00:00"
+      "fingerprint": "9698d4a0559936dc",
+      "first_seen": "2026-08-29T19:02:27+00:00",
+      "verified_at": "2026-08-29T19:02:27+00:00"
     }
-  ]
+  ],
+  "mobile": [
+    {
+      "title": "Performance Engineer",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/sourcedev/performance-engineer-london-497393",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "Sourcedev",
+      "location": "London",
+      "description": "UK | Full-Time The Mission: Source.dev Our founders spent over a decade at Google shaping the Android operating systems - building and shipping the software that now runs on billions of devices. They didn't just use Android; they led teams responsible for the Android Virtualization Framework , Security , and the Android Runtime (ART) . Through that journey, they saw a quiet but massive crisis: as…",
+      "salary": "",
+      "posted_at": "2026-08-29T15:40:07+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "mobile",
+      "remote": false,
+      "tags": [
+        "Engineering"
+      ],
+      "fingerprint": "ae56f8cf502fba1b",
+      "first_seen": "2026-08-29T19:02:27+00:00",
+      "verified_at": "2026-08-29T19:02:27+00:00"
+    },
+    {
+      "title": "Android Engineer",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/motorway/android-engineer-london-28972",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "Motorway",
+      "location": "London",
+      "description": "About Motorway Motorway is the UK's largest online car-selling platform. We connect private sellers directly with over 8,000 dealers nationwide. Our online platform helps sellers achieve great prices for their cars while giving dealers fast, reliable access to the stock they want for their dealerships. Founded in 2017, our award-winning, technology-led approach has redefined the experience of…",
+      "salary": "",
+      "posted_at": "2026-08-29T15:40:08+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "mobile",
+      "remote": false,
+      "tags": [
+        "Product"
+      ],
+      "fingerprint": "e31673c922da67da",
+      "first_seen": "2026-08-29T19:02:27+00:00",
+      "verified_at": "2026-08-29T19:02:27+00:00"
+    }
+  ],
+  "devops": [
+    {
+      "title": "Cloud Engineer",
+      "url": "https://himalayas.app/companies/arena-analytics/jobs/cloud-engineer",
+      "source": "himalayas",
+      "scope": "global",
+      "company": "Arena Analytics",
+      "location": "Brazil",
+      "description": "About Arena:Arena is a Series A company backed by top-tier investors such as CRV, Redpoint and Craft Ventures.",
+      "salary": "",
+      "posted_at": "2026-08-29T17:29:11+00:00",
+      "attribution": "Himalayas",
+      "attribution_url": "https://himalayas.app",
+      "track": "devops",
+      "remote": true,
+      "tags": [
+        "Engineering",
+        "Cloud-Engineer",
+        "DevOps",
+        "Site-Reliability-Engineering-(SRE)",
+        "Infrastructure-Engineering",
+        "Cloud-Software-Engineer",
+        "Cloud-Services-Engineer",
+        "AWS-Cloud-Engineer"
+      ],
+      "fingerprint": "5f3207a222a64f1f",
+      "first_seen": "2026-08-29T19:02:27+00:00",
+      "verified_at": "2026-08-29T19:02:27+00:00"
+    }
+  ],
+  "data": [],
+  "qa_security": [],
+  "design_product": []
 }
