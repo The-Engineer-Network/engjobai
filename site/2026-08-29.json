@@ -1,0 +1,282 @@
+{
+  "frontend": [],
+  "backend": [
+    {
+      "title": "Associate Technical Account Manager",
+      "url": "https://jobicy.com/jobs/151956-associate-technical-account-manager",
+      "source": "jobicy",
+      "scope": "global",
+      "company": "Keyfactor, Inc.",
+      "location": "USA",
+      "description": "About Keyfactor Our mission is to securely connect the world: humans, machines, and AI. Keyfactor is the leader in trust infrastructure for AI and machines, helping the world's largest enterprises and government agencies take control of the cryptographic identities that safeguard every digital interaction. Behind the platform is a global team of people who care…",
+      "salary": "",
+      "posted_at": "2026-08-28T18:58:45+00:00",
+      "attribution": "Jobicy",
+      "attribution_url": "https://jobicy.com",
+      "track": "backend",
+      "remote": true,
+      "tags": [
+        "Technical Support"
+      ],
+      "fingerprint": "df73de6053923ff4",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:07+00:00"
+    },
+    {
+      "title": "Growth Marketing Manager",
+      "url": "https://jobicy.com/jobs/151960-growth-marketing-manager-3",
+      "source": "jobicy",
+      "scope": "global",
+      "company": "Keyfactor, Inc.",
+      "location": "Canada, USA",
+      "description": "About Keyfactor Our mission is to securely connect the world: humans, machines, and AI. Keyfactor is the leader in trust infrastructure for AI and machines, helping the world's largest enterprises and government agencies take control of the cryptographic identities that safeguard every digital interaction. Behind the platform is a global team of people who care…",
+      "salary": "",
+      "posted_at": "2026-08-28T18:59:52+00:00",
+      "attribution": "Jobicy",
+      "attribution_url": "https://jobicy.com",
+      "track": "backend",
+      "remote": true,
+      "tags": [
+        "Marketing & Sales"
+      ],
+      "fingerprint": "512249bae5ab21d9",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:06+00:00"
+    },
+    {
+      "title": "Senior Product Manager- Hardware",
+      "url": "https://www.arbeitnow.com/jobs/companies/sumup/senior-product-manager-hardware-berlin-66166",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "SumUp",
+      "location": "Berlin, Germany",
+      "description": "Team description The Hardware Tribe designs and builds the point-of-sale devices and accessories that let millions of small businesses take payments every day, spanning industrial design, embedded systems, mobile apps and backend services. This role sits at the centre of that work, partnering closely with hardware, software, industrial design, marketing, finance and executive teams to shape new…",
+      "salary": "",
+      "posted_at": "2026-08-28T20:45:26+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "backend",
+      "remote": false,
+      "tags": [],
+      "fingerprint": "137345117d50a2e7",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:11+00:00"
+    },
+    {
+      "title": "Account Executive, Commercial Accounts (Public)",
+      "url": "https://www.arbeitnow.com/jobs/companies/veeamsoftware/remote-account-executive-commercial-accounts-public-56496",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "veeamsoftware",
+      "location": "Remote",
+      "description": "Veeam is the Data and AI Trust Company, specializing in helping organizations ensure their data and AI are fully understood, secured, and resilient to enable the acceleration of safe AI at scale. As the market leader in both data resilience and data security posture management, Veeam is built for the convergence of identity, data, security, and AI risk. Headquartered in Seattle with offices in…",
+      "salary": "",
+      "posted_at": "2026-08-28T20:55:06+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "backend",
+      "remote": true,
+      "tags": [
+        "Field Sales",
+        "Central 1000030"
+      ],
+      "fingerprint": "d307b6e6d6b40e47",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:09+00:00"
+    },
+    {
+      "title": "Account Executive, Commercial Accounts",
+      "url": "https://www.arbeitnow.com/jobs/companies/veeamsoftware/remote-account-executive-commercial-accounts-8637",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "veeamsoftware",
+      "location": "Remote",
+      "description": "Veeam is the Data and AI Trust Company, specializing in helping organizations ensure their data and AI are fully understood, secured, and resilient to enable the acceleration of safe AI at scale. As the market leader in both data resilience and data security posture management, Veeam is built for the convergence of identity, data, security, and AI risk. Headquartered in Seattle with offices in…",
+      "salary": "",
+      "posted_at": "2026-08-28T20:55:06+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "backend",
+      "remote": true,
+      "tags": [
+        "Field Sales",
+        "Central 1000030"
+      ],
+      "fingerprint": "1a8d50f90f122799",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:10+00:00"
+    },
+    {
+      "title": "Veeam Kasten, Director SE – EMEA & APJ",
+      "url": "https://www.arbeitnow.com/jobs/companies/veeamsoftware/remote-veeam-kasten-director-se-emea-apj-250747",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "veeamsoftware",
+      "location": "Remote",
+      "description": "Veeam is the Data and AI Trust Company, specializing in helping organizations ensure their data and AI are fully understood, secured, and resilient to enable the acceleration of safe AI at scale. As the market leader in both data resilience and data security posture management, Veeam is built for the convergence of identity, data, security, and AI risk. Headquartered in Seattle with offices in…",
+      "salary": "",
+      "posted_at": "2026-08-28T20:55:07+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "backend",
+      "remote": true,
+      "tags": [
+        "Kasten Sales 1009429"
+      ],
+      "fingerprint": "d3e1b09df5e40676",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:07+00:00"
+    },
+    {
+      "title": "Lead Customer Success Engineer - Data & AI Security",
+      "url": "https://www.arbeitnow.com/jobs/companies/veeamsoftware/lead-customer-success-engineer-data-ai-security-munich-239002",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "veeamsoftware",
+      "location": "Munich",
+      "description": "Veeam is the Data and AI Trust Company, specializing in helping organizations ensure their data and AI are fully understood, secured, and resilient to enable the acceleration of safe AI at scale. As the market leader in both data resilience and data security posture management, Veeam is built for the convergence of identity, data, security, and AI risk. Headquartered in Seattle with offices in…",
+      "salary": "",
+      "posted_at": "2026-08-28T20:55:07+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "backend",
+      "remote": false,
+      "tags": [
+        "WW Customer Success 1009886"
+      ],
+      "fingerprint": "06bf195c4408316d",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:08+00:00"
+    },
+    {
+      "title": "Backend QA Engineer",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/jobgether/backend-qa-engineer-uk-147650",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "Jobgether",
+      "location": "UK",
+      "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Backend QA Engineer based in United Kingdom. Take ownership of quality across a high-traffic, backend-focused platform where reliability and precision are critical. You’ll combine hands-on manual testing with automation to validate APIs, transaction lifecycles, data…",
+      "salary": "",
+      "posted_at": "2026-08-28T21:05:11+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "backend",
+      "remote": false,
+      "tags": [
+        "IT"
+      ],
+      "fingerprint": "e38aaa8c9d3f913e",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:14+00:00"
+    },
+    {
+      "title": "Staff Software Engineer, Backend (Identity International)",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/affirm/staff-software-engineer-backend-identity-international-271131",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "Affirm",
+      "location": "",
+      "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest. Identity at Affirm is mission-critical; it is the very first step of the customer journey and the foundation of global expansion. The International Expansion Unit (IEU) owns Identity for every market outside North America…",
+      "salary": "",
+      "posted_at": "2026-08-28T21:55:11+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "backend",
+      "remote": false,
+      "tags": [
+        "Checkout"
+      ],
+      "fingerprint": "fcfbbbcf03a8e348",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:14+00:00"
+    },
+    {
+      "title": "Senior Sales Engineer - Data & AI Security",
+      "url": "https://www.arbeitnow.com/jobs/companies/veeamsoftware/senior-sales-engineer-data-ai-security-munich-498902",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "veeamsoftware",
+      "location": "Munich",
+      "description": "Veeam is the Data and AI Trust Company, specializing in helping organizations ensure their data and AI are fully understood, secured, and resilient to enable the acceleration of safe AI at scale. As the market leader in both data resilience and data security posture management, Veeam is built for the convergence of identity, data, security, and AI risk. Headquartered in Seattle with offices in…",
+      "salary": "",
+      "posted_at": "2026-08-27T14:55:32+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "backend",
+      "remote": false,
+      "tags": [
+        "Securiti_ToddVancil 1009709"
+      ],
+      "fingerprint": "17731ff3f5588041",
+      "first_seen": "2026-08-27T18:30:41+00:00",
+      "verified_at": "2026-08-27T18:30:29+00:00"
+    }
+  ],
+  "fullstack": [
+    {
+      "title": "Senior Fullstack Developer (m/w/d)",
+      "url": "https://www.arbeitnow.com/jobs/companies/techpilot/senior-fullstack-developer-munchen-488163",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "Techpilot",
+      "location": "München",
+      "description": "Was Du machen wirst Du baust an einer B2B-Plattform, die täglich von Einkäufern und Fertigern in ganz Europa benutzt wird Du arbeitest in einem funktionsübergreifenden Team – von der Idee bis in die Produktion, ohne Übergabe-Ping-Pong Du übernimmst Ownership für Themen, nicht für Tickets Du wirkst in einem KI-Spezialprojekt mit: CAD-Zeichnungen und STEP-Files maschinell verstehen…",
+      "salary": "",
+      "posted_at": "2026-08-28T20:10:23+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "fullstack",
+      "remote": false,
+      "tags": [],
+      "fingerprint": "e99c8e2f80ba382f",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:14+00:00"
+    }
+  ],
+  "mobile": [],
+  "devops": [],
+  "data": [],
+  "qa_security": [],
+  "design_product": [
+    {
+      "title": "Product Manager, Homepage",
+      "url": "https://www.arbeitnow.com/jobs/companies/wolt-english/product-manager-homepage-berlin-374028",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "Wolt - English",
+      "location": "Berlin, Germany",
+      "description": "About Wolt At Wolt, we create technology that brings joy, simplicity and earnings to the neighborhoods of the world. In 2014 we started with delivery of restaurant food. Now we're building the delivery of (almost) everything and you'll find us in over 500 cities in 30 countries around the world. In 2022 we joined forces with DoorDash and together we keep on dreaming big and expanding across the…",
+      "salary": "",
+      "posted_at": "2026-08-28T20:45:24+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "design_product",
+      "remote": false,
+      "tags": [],
+      "fingerprint": "27da74a8a170d1d0",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:12+00:00"
+    },
+    {
+      "title": "Senior Product Manager, KYB - MoonPay Enterprise",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/moonpay/senior-product-manager-kyb-moonpay-enterprise-london-hybrid-23264",
+      "source": "arbeitnow",
+      "scope": "global",
+      "company": "MoonPay",
+      "location": "London - Hybrid",
+      "description": "MoonPay Enterprise is for builders with something to prove. This isn't a \"work on cool crypto stuff\" company. It's a high-standards, high-velocity, high-accountability company building the operating system for value movement. If the internet moves information, we move value: crypto, stablecoins, tokenized assets, and whatever comes next. Four offerings make that real: fund, tokenize, trade, and…",
+      "salary": "",
+      "posted_at": "2026-08-28T21:05:01+00:00",
+      "attribution": "Arbeitnow",
+      "attribution_url": "https://www.arbeitnow.com",
+      "track": "design_product",
+      "remote": false,
+      "tags": [
+        "Product"
+      ],
+      "fingerprint": "6c35d9fb120ba733",
+      "first_seen": "2026-08-29T00:17:14+00:00",
+      "verified_at": "2026-08-29T00:17:14+00:00"
+    }
+  ]
+}
