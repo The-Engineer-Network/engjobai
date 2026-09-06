@@ -13,7 +13,6 @@ env/
 .pytest_cache/
 
 # Editors / OS
-.vscode/
 .idea/
 .DS_Store
 Thumbs.db
@@ -27,3 +26,7 @@ scratch/
 #   jobs.db  is the engine's memory of what it has already published — the
 #            GitHub Actions run commits it so the schedule has no server.
 #   site/    is the published output you point Pages at.
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
